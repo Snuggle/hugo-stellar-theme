@@ -2,62 +2,62 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://localhost:42289/about/</loc>
+    <loc>http://localhost:35067/about/</loc>
     <lastmod>2024-12-22T16:34:24+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:42289/photos/</loc>
+    <loc>http://localhost:35067/photos/</loc>
     <lastmod>2024-12-22T23:28:08+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:42289/archive/</loc>
+    <loc>http://localhost:35067/archive/</loc>
     <lastmod>2024-12-22T23:28:08+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:42289/stats/</loc>
+    <loc>http://localhost:35067/stats/</loc>
   </url><url>
-    <loc>http://localhost:42289/replies/2024/12/24/53192296.html</loc>
+    <loc>http://localhost:35067/replies/2024/12/24/53192296.html</loc>
     <lastmod>2024-12-24T22:03:53+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:42289/</loc>
+    <loc>http://localhost:35067/</loc>
     <lastmod>2024-12-24T22:03:53+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:42289/replies/2024/12/24/53163097.html</loc>
+    <loc>http://localhost:35067/replies/2024/12/24/53163097.html</loc>
     <lastmod>2024-12-24T15:32:14+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:42289/replies/</loc>
+    <loc>http://localhost:35067/replies/</loc>
     <lastmod>2024-12-24T11:14:43+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:42289/replies/2024/12/24/53136894.html</loc>
+    <loc>http://localhost:35067/replies/2024/12/24/53136894.html</loc>
     <lastmod>2024-12-24T09:12:41+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:42289/replies/2024/12/24/53136248.html</loc>
+    <loc>http://localhost:35067/replies/2024/12/24/53136248.html</loc>
     <lastmod>2024-12-24T08:54:35+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:42289/posts/</loc>
+    <loc>http://localhost:35067/posts/</loc>
     <lastmod>2024-12-23T13:40:12+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:42289/transcripts/2024/12/22/1749.html</loc>
+    <loc>http://localhost:35067/transcripts/2024/12/22/1749.html</loc>
     <lastmod>2024-12-22T12:37:05+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:42289/transcripts/</loc>
+    <loc>http://localhost:35067/transcripts/</loc>
     <lastmod>2024-12-22T12:37:05+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:42289/contact/</loc>
+    <loc>http://localhost:35067/contact/</loc>
     <lastmod>2020-11-29T21:53:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:42289/example_post/example_post-copy/</loc>
+    <loc>http://localhost:35067/example_post/example_post-copy/</loc>
     <lastmod>2000-01-01T23:03:38+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:42289/categories/</loc>
+    <loc>http://localhost:35067/categories/</loc>
     <lastmod>2000-01-01T23:03:38+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:42289/example_post/example_post/</loc>
+    <loc>http://localhost:35067/example_post/example_post/</loc>
     <lastmod>2000-01-01T23:03:38+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:42289/example_post/</loc>
+    <loc>http://localhost:35067/example_post/</loc>
     <lastmod>2000-01-01T23:03:38+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:42289/categories/posts/</loc>
+    <loc>http://localhost:35067/categories/posts/</loc>
     <lastmod>2000-01-01T23:03:38+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:42289/embed/</loc>
+    <loc>http://localhost:35067/embed/</loc>
   </url>
 </urlset>
