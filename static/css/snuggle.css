@@ -517,3 +517,7 @@ ul.post-tags li {
 .card-body h2 {
 	margin-top: 5px;
 }
+
+#content p img {
+	width: 100%;
+}
