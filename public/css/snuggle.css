@@ -401,10 +401,9 @@ html {
 .card {
 	text-align: left;
 	flex: 1;
-	min-width: 300px;
 	position: relative;
 	background: #fff;
-	width: 24em;
+	width: 250px;
 	border-radius: 0.6em;
 	overflow: hidden;
 	cursor: pointer;
@@ -497,6 +496,10 @@ ul.post-tags li {
 	display: inline;
 	padding-left: 0;
 	}
+}
+
+.grid {
+	margin: 0 auto;
 }
 
 .grid-item {
