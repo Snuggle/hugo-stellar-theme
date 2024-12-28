@@ -5,13 +5,11 @@
     </h2>
     <p>Evie's small personal website for hosting my own projects and centralizing all of my internet-related stuff within one place.
     <ul class="actions">
-          <li><a href="https://posts.snugg.ie/2020/12/23/lets-look-into.html" class="button">🖥️ — What am I running on?</a></li>
+          <li><a href="/2020/12/23/lets-look-into.html" class="button">🖥️ — What am I running on?</a></li>
       </ul>
       {{ if .Site.Params.footer.social_list.enable }}
       <ul class="icons">
-        {{ range .Site.Params.footer.social }}
-          <li><a href="{{ .link }}" class="icon alt {{ .icon }}"><span class="label">{{ .title }}</span></a></li>
-        {{ end }}
+          <li><i href="https://tech.lgbt/@Snuggle" class="icon alt fa-brands fa-mastodon"></i><span class="label"></span></a></li>
       </ul>
     {{ end }}
 
