@@ -1,0 +1,194 @@
+{
+  "baseurl": "https://example.org/",
+  "googleAnalytics": "",
+  "languageCode": "en-us",
+  "title": "Hugo Stellar Theme",
+  "params": {
+    "navigation": [
+      {
+        "href": "#intro",
+        "name": "Introduction"
+      },
+      {
+        "href": "#first",
+        "name": "First Section"
+      },
+      {
+        "href": "#second",
+        "name": "Second Section"
+      },
+      {
+        "href": "#cta",
+        "name": "Get Started"
+      }
+    ],
+    "section": [
+      {
+        "description": "",
+        "id": "first",
+        "title": "Magna veroeros",
+        "feature": [
+          {
+            "description": "Sed lorem amet ipsum dolor et amet nullam consequat a feugiat consequat tempus veroeros sed consequat.",
+            "icon": "fa-code",
+            "title": "Ipsum consequat"
+          },
+          {
+            "description": "Sed lorem amet ipsum dolor et amet nullam consequat a feugiat consequat tempus veroeros sed consequat.",
+            "icon": "fa-copy",
+            "title": "Amed sed feugiat"
+          },
+          {
+            "description": "Sed lorem amet ipsum dolor et amet nullam consequat a feugiat consequat tempus veroeros sed consequat.",
+            "icon": "fa-diamond",
+            "title": "Dolor nullam"
+          }
+        ],
+        "features": {
+          "enable": true
+        },
+        "footer": {
+          "enable": true,
+          "action": [
+            {
+              "buttonUrl": "generic.html",
+              "buttontext": "Learn More"
+            }
+          ]
+        }
+      },
+      {
+        "description": "Donec imperdiet consequat consequat. Suspendisse feugiat congue posuere. Nulla massa urna, fermentum eget quam aliquet.",
+        "id": "second",
+        "title": "Ipsum consequat",
+        "statistic": [
+          {
+            "icon": "fa-code-fork",
+            "text": "Etiam",
+            "value": "5,120"
+          },
+          {
+            "icon": "fa-folder-open-o",
+            "text": "Magna",
+            "value": "8,192"
+          },
+          {
+            "icon": "fa-signal",
+            "text": "Tempus",
+            "value": "2,048"
+          },
+          {
+            "icon": "fa-laptop",
+            "text": "Aliquam",
+            "value": "4,096"
+          },
+          {
+            "icon": "fa-diamond",
+            "text": "Nullam",
+            "value": "1,024"
+          }
+        ],
+        "content": {
+          "enable": true,
+          "text": "Nam elementum nisl et mi a commodo porttitor. Morbi sit amet nisl eu arcu faucibus hendrerit vel a risus. Nam a orci mi, elementum ac arcu sit amet, fermentum pellentesque et purus. Integer maximus varius lorem, sed convallis diam accumsan sed. Etiam porttitor placerat sapien, sed eleifend a enim pulvinar faucibus semper quis ut arcu. Ut non nisl a mollis est efficitur vestibulum. Integer eget purus nec nulla mattis et accumsan ut magna libero. Morbi auctor iaculis porttitor. Sed ut magna ac risus et hendrerit scelerisque. Praesent eleifend lacus in lectus aliquam porta. Cras eu ornare dui curabitur lacinia."
+        },
+        "footer": {
+          "enable": true,
+          "action": [
+            {
+              "buttonUrl": "generic.html",
+              "buttontext": "Learn More"
+            }
+          ]
+        },
+        "statistics": {
+          "enable": true
+        }
+      },
+      {
+        "description": "Donec imperdiet consequat consequat. Suspendisse feugiat congue posuere. Nulla massa urna, fermentum eget quam aliquet.",
+        "id": "cta",
+        "title": "Congue imperdiet",
+        "footer": {
+          "enable": true,
+          "action": [
+            {
+              "buttonUrl": "generic.html",
+              "buttontext": "Get Started",
+              "customClass": "special"
+            },
+            {
+              "buttonUrl": "generic.html",
+              "buttontext": "Learn More"
+            }
+          ]
+        }
+      }
+    ],
+    "footer": {
+      "address": "1234 Somewhere Road • Nashville, TN 00000 • USA",
+      "description": "Sed lorem ipsum dolor sit amet et nullam consequat feugiat consequat magna adipiscing tempus etiam dolore veroeros. eget dapibus mauris. Cras aliquet, nisl ut viverra sollicitudin, ligula erat egestas velit, vitae tincidunt odio.",
+      "email": "information@untitled.tld",
+      "enable": true,
+      "phone": "(000) 000-0000 x 0000",
+      "second_title": "Etiam feugiat",
+      "title": "Aliquam sed mauris",
+      "action": [
+        {
+          "buttontext": "Learn More",
+          "href": "generic.html"
+        }
+      ],
+      "social": [
+        {
+          "icon": "fa-twitter",
+          "link": "#",
+          "title": "Twitter"
+        },
+        {
+          "icon": "fa-facebook",
+          "link": "#",
+          "title": "Facebook"
+        },
+        {
+          "icon": "fa-instagram",
+          "link": "#",
+          "title": "Instagramm"
+        },
+        {
+          "icon": "fa-dribbble",
+          "link": "#",
+          "title": "Dribbble"
+        },
+        {
+          "icon": "fa-envelope",
+          "link": "#",
+          "title": "Email"
+        }
+      ],
+      "copyright": {
+        "enable": true,
+        "text": "© Untitled, Design: [HTML5UP](//html5up.net)"
+      },
+      "social_list": {
+        "enable": true
+      }
+    },
+    "header": {
+      "description": "Just another free, fully responsive site template built by [@ajlkn](https://twitter.com/ajlkn) for <a href=\"https://html5up.net\">HTML5 UP</a>. Ported to [hugo](https://gohugo.io) by [@AntonPolishko](https://github.com/antonpolishko)",
+      "image": "images/logo.svg",
+      "title": "Stellar"
+    },
+    "intro": {
+      "description": "Sed lorem ipsum dolor sit amet nullam consequat feugiat consequat magna adipiscing magna etiam amet veroeros. Lorem ipsum dolor tempus sit cursus. Tempus nisl et nullam lorem ipsum dolor sit amet aliquam.",
+      "image": "images/pic01.jpg",
+      "title": "Ipsum sed adipiscing",
+      "action": [
+        {
+          "buttontext": "Learn More",
+          "href": "generic.html"
+        }
+      ]
+    }
+  }
+}
