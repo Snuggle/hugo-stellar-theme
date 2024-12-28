@@ -15,11 +15,8 @@
 			<div id="wrapper">
 
 				<!-- Header -->
-        <header id="header" class="post-header">
-          {{ if .Title }}
-          <h2 class="p-name">{{ .Title }}</h2>
-          {{ end }}
-					</header>
+        {{ partial "header.html" . }}
+
           <nav id="nav">
             {{ partial "breadcrumbs.html" . }}
           </nav>
@@ -32,6 +29,9 @@
             <div class="post h-entry {{ range .Params.categories }} {{ . | urlize | lower }}{{ end }}">
 
                 <article class="post-content e-content">
+                  {{ if .Title }}
+                  <h1 class="p-name">{{ .Title }}</h2>
+                  {{ end }}
                   {{ .Content }}
                 </article>
               </div>
@@ -96,13 +96,9 @@
   {{ end }}
   {{ end }}
 
-  {{ if templates.Exists "partials/microhook-after-post.html" }}
-  {{ partial "microhook-after-post.html" . }}
-  {{ end }}
-
 </div>
-{{ if or (templates.Exists "partials/reply-by-email.html") (templates.Exists "partials/conversation-link.html") (templates.Exists "partials/plugin_tinylytics.html") (templates.Exists "partials/reply-on-mastodon.html") (templates.Exists "partials/microhook-share-button.html")}}
 <ul class="reply-buttons">
+{{ if or (templates.Exists "partials/reply-by-email.html") (templates.Exists "partials/conversation-link.html") (templates.Exists "partials/plugin_tinylytics.html") (templates.Exists "partials/reply-on-mastodon.html") (templates.Exists "partials/microhook-share-button.html")}}
   {{ if templates.Exists "partials/reply-by-email.html" }}
   <li>{{ partial "reply-by-email.html" . }}</li>
   {{ end }}
@@ -112,21 +108,11 @@
   {{ if templates.Exists "partials/reply-on-mastodon.html" }}
   <li>{{ partial "reply-on-mastodon.html" . }}</li>
   {{ end }}
-  {{ if templates.Exists "partials/microhook-share-button.html" }}
-  {{ partial "microhook-share-button.html" . }}
   {{ end }}
 </ul>
-  {{ end }}
 
-{{ if templates.Exists "partials/microhook-before-comments.html" }}
-{{ partial "microhook-before-comments.html" . }}
-{{ end }}
 
 <script type="text/javascript" src="https://micro.blog/conversation.js?url={{ .Permalink }}"></script>
-
-{{ if templates.Exists "partials/microhook-after-comments.html" }}
-{{ partial "microhook-after-comments.html" . }}
-{{ end }}
 
 {{ end }}
 

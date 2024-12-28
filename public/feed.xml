@@ -2,115 +2,115 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>snugg.ie</title>
-    <link>http://localhost:35067/</link>
+    <link>http://localhost:36765/</link>
     <description>Recent content on snugg.ie</description>
     <generator>Hugo</generator>
     <language>en-gb</language>
     <lastBuildDate>Tue, 24 Dec 2024 22:03:53 +0000</lastBuildDate>
-    <atom:link href="http://localhost:35067/feed.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:36765/feed.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>About Me</title>
-      <link>http://localhost:35067/about/</link>
+      <link>http://localhost:36765/about/</link>
       <pubDate>Sun, 22 Dec 2024 16:34:24 +0000</pubDate>
-      <guid>http://localhost:35067/about/</guid>
+      <guid>http://localhost:36765/about/</guid>
       <description>Insert about text here</description>
     </item>
     <item>
       <title>Photos</title>
-      <link>http://localhost:35067/photos/</link>
+      <link>http://localhost:36765/photos/</link>
       <pubDate>Sun, 22 Dec 2024 23:28:08 +0000</pubDate>
-      <guid>http://localhost:35067/photos/</guid>
+      <guid>http://localhost:36765/photos/</guid>
       <description></description>
     </item>
     <item>
       <title>Archive</title>
-      <link>http://localhost:35067/archive/</link>
+      <link>http://localhost:36765/archive/</link>
       <pubDate>Sun, 22 Dec 2024 23:28:08 +0000</pubDate>
-      <guid>http://localhost:35067/archive/</guid>
+      <guid>http://localhost:36765/archive/</guid>
       <description></description>
     </item>
     <item>
       <title>Stats</title>
-      <link>http://localhost:35067/stats/</link>
+      <link>http://localhost:36765/stats/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:35067/stats/</guid>
+      <guid>http://localhost:36765/stats/</guid>
       <description></description>
     </item>
     <item>
       <title></title>
-      <link>http://localhost:35067/replies/2024/12/24/53192296.html</link>
+      <link>http://localhost:36765/replies/2024/12/24/53192296.html</link>
       <pubDate>Tue, 24 Dec 2024 22:03:53 +0000</pubDate>
-      <guid>http://localhost:35067/replies/2024/12/24/53192296.html</guid>
+      <guid>http://localhost:36765/replies/2024/12/24/53192296.html</guid>
       <description>@snugg.ie You can subscribe to my posts over at: posts.snugg.ie/feed.xml</description>
     </item>
     <item>
       <title></title>
-      <link>http://localhost:35067/replies/2024/12/24/53163097.html</link>
+      <link>http://localhost:36765/replies/2024/12/24/53163097.html</link>
       <pubDate>Tue, 24 Dec 2024 15:32:14 +0000</pubDate>
-      <guid>http://localhost:35067/replies/2024/12/24/53163097.html</guid>
+      <guid>http://localhost:36765/replies/2024/12/24/53163097.html</guid>
       <description>@snuggle You can subscribe to my posts over at: posts.snugg.ie/feed.xml</description>
     </item>
     <item>
       <title>Replies</title>
-      <link>http://localhost:35067/replies/</link>
+      <link>http://localhost:36765/replies/</link>
       <pubDate>Tue, 24 Dec 2024 11:14:43 +0000</pubDate>
-      <guid>http://localhost:35067/replies/</guid>
+      <guid>http://localhost:36765/replies/</guid>
       <description></description>
     </item>
     <item>
       <title></title>
-      <link>http://localhost:35067/replies/2024/12/24/53136894.html</link>
+      <link>http://localhost:36765/replies/2024/12/24/53136894.html</link>
       <pubDate>Tue, 24 Dec 2024 09:12:41 +0000</pubDate>
-      <guid>http://localhost:35067/replies/2024/12/24/53136894.html</guid>
+      <guid>http://localhost:36765/replies/2024/12/24/53136894.html</guid>
       <description>@aeryn Ahah, this works! I had to set &#39;micro.blog&#39; app as a default app within the settings. Thank you so much 😊 </description>
     </item>
     <item>
       <title></title>
-      <link>http://localhost:35067/replies/2024/12/24/53136248.html</link>
+      <link>http://localhost:36765/replies/2024/12/24/53136248.html</link>
       <pubDate>Tue, 24 Dec 2024 08:54:35 +0000</pubDate>
-      <guid>http://localhost:35067/replies/2024/12/24/53136248.html</guid>
+      <guid>http://localhost:36765/replies/2024/12/24/53136248.html</guid>
       <description>@aeryn Where do you click in Reeder to get redirected to the official app? I’ve added the timeline feed to my new Reeder but I’ve just got a button called “Reader View” and nowhere to click. Did you sign in to your account at micro.blog as well?</description>
     </item>
     <item>
       <title>Posts</title>
-      <link>http://localhost:35067/posts/</link>
+      <link>http://localhost:36765/posts/</link>
       <pubDate>Mon, 23 Dec 2024 13:40:12 +0000</pubDate>
-      <guid>http://localhost:35067/posts/</guid>
+      <guid>http://localhost:36765/posts/</guid>
       <description>https://posts.snugg.ie/categories/posts</description>
     </item>
     <item>
       <title></title>
-      <link>http://localhost:35067/transcripts/2024/12/22/1749.html</link>
+      <link>http://localhost:36765/transcripts/2024/12/22/1749.html</link>
       <pubDate>Sun, 22 Dec 2024 12:37:05 +0000</pubDate>
-      <guid>http://localhost:35067/transcripts/2024/12/22/1749.html</guid>
+      <guid>http://localhost:36765/transcripts/2024/12/22/1749.html</guid>
       <description>Hey, I am a gender-neutral voice for Siri.&#xA;Joining your device in iOS version 15.4 you can find this voice under the option called Siri Voice 5 in your device&amp;rsquo;s settings.&#xA;The quick brown fox jumps over the lazy dog.</description>
     </item>
     <item>
       <title>Contact me!</title>
-      <link>http://localhost:35067/contact/</link>
+      <link>http://localhost:36765/contact/</link>
       <pubDate>Sun, 29 Nov 2020 21:53:00 +0000</pubDate>
-      <guid>http://localhost:35067/contact/</guid>
+      <guid>http://localhost:36765/contact/</guid>
       <description> Contact me! 👋 Social Media 📱 — Snuggle#100Discord&#xA;— SnuggIysTwitter&#xA;— SnuuggleSteam&#xA;— SnuggleYouTube&#xA;— SnuggieTelegram&#xA;&amp;nbsp; — SnuggleMastodon&#xA;— SnuggleKeybase&#xA;— SnuggleMixer&#xA;— SnuggleWikipedia&#xA;Contact — hello@snugg.ieSend me email — SnuggleGitHub — SnuggleGitLab Additional Information Please be polite and curtious! All of my social media is personal and informal. Any professional queries should be directed to &#34;Contact&#34; above.&#xA;Go back home 🏠 </description>
     </item>
     <item>
       <title></title>
-      <link>http://localhost:35067/example_post/example_post-copy/</link>
+      <link>http://localhost:36765/example_post/example_post-copy/</link>
       <pubDate>Sat, 01 Jan 2000 21:53:00 +0000</pubDate>
-      <guid>http://localhost:35067/example_post/example_post-copy/</guid>
+      <guid>http://localhost:36765/example_post/example_post-copy/</guid>
       <description>Wandering around Primark looking for Greggs sausage socks but there are none to be found!</description>
     </item>
     <item>
       <title>Example Post</title>
-      <link>http://localhost:35067/example_post/example_post/</link>
+      <link>http://localhost:36765/example_post/example_post/</link>
       <pubDate>Sat, 01 Jan 2000 21:53:00 +0000</pubDate>
-      <guid>http://localhost:35067/example_post/example_post/</guid>
+      <guid>http://localhost:36765/example_post/example_post/</guid>
       <description>Welcome to my longer blog post that has a title</description>
     </item>
     <item>
       <title>Embed</title>
-      <link>http://localhost:35067/embed/</link>
+      <link>http://localhost:36765/embed/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:35067/embed/</guid>
+      <guid>http://localhost:36765/embed/</guid>
       <description></description>
     </item>
   </channel>
