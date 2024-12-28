@@ -1,0 +1,390 @@
+/* Main title padding */
+@media screen and (min-width: 737px) {
+	#nav+#main {
+		padding-top:4.25em;
+	}
+}
+
+
+/* Remove content split */
+p.no-split {
+	columns: 1;
+}
+
+
+/* Make hug-server statistics responsive */
+
+@media screen and (max-width: 1279px) {
+
+	.hug-statistics {
+		display: block;
+		width: 30em;
+		max-width: 100%;
+		margin: 0 auto 2em auto;
+	}
+
+		.hug-statistics li:first-child {
+			border-bottom-left-radius: 0;
+			border-top-right-radius: 8px;
+		}
+
+		.hug-statistics li:last-child {
+			border-top-right-radius: 0;
+			border-bottom-left-radius: 8px;
+		}
+
+		.hug-statistics li .icon:before {
+			font-size: 3.75rem;
+		}
+
+		.hug-statistics li strong, .hug-statistics li b {
+			font-size: 2.5em;
+		}
+
+}
+
+@media screen and (min-width: 1280px) and (max-width: 1680px) {
+	.hug-statistics {
+		margin: 0 auto 0 auto;
+	}
+}
+
+/* Hug Server Blog */
+
+.double-image {
+	margin: auto auto 10.5em auto;
+}
+
+#emb_i1g5en {
+	background-color: RGBA(255,255,255,0.2);
+}
+
+.centre {
+	display: block;
+	margin: 2em auto 2em auto;
+	margin-left: auto;
+	margin-right: auto;
+	width: 80%;
+	text-align: center;
+}
+
+/* Dark theme theming rules */
+
+body.force-theme-dark {
+	background-color: #230313;
+	background-image: url("images/overlay.png"), -moz-linear-gradient(45deg, #230313 15%, #640032 85%);
+	background-image: url("images/overlay.png"), -webkit-linear-gradient(45deg, #230313 15%, #640032 85%);
+	background-image: url("images/overlay.png"), -ms-linear-gradient(45deg, #230313 15%, #640032 85%);
+	background-image: url("images/overlay.png"), linear-gradient(45deg, #230313 15%, #640032 85%);
+}
+
+
+#nav.force-theme-dark {
+	background-color: #230313;
+	color: LavenderBlush;
+}
+
+#nav.force-theme-dark a:hover {
+	color: white;
+}
+
+#main.force-theme-dark {
+	background-color: #230313;
+	color: LavenderBlush;
+}
+
+#main.force-theme-dark a:hover {
+	color: white;
+}
+
+#main.force-theme-dark .button.primary {
+	background-color: #a5125b !important;
+}
+
+#main.force-theme-dark .button {
+	color: white !important;
+}
+
+#main.force-theme-dark h1 {
+	color: LavenderBlush;
+}
+
+#main.force-theme-dark h2 {
+	color: LavenderBlush;
+}
+
+#main.force-theme-dark h3 {
+	color: LavenderBlush;
+}
+
+#main.force-theme-dark h4 {
+	color: LavenderBlush;
+}
+
+#main.force-theme-dark > .main {
+	border-top: solid 1px #53032b;
+}
+
+#main.force-theme-dark b {
+	color: white;
+}
+
+#main.force-theme-dark strong {
+	color: white;
+}
+
+#nav.force-theme-dark ul li a.active {
+	color: black !important;
+}
+
+/* Toggle theme buttons */
+
+.toggle-theme-light {
+  display: none;
+  position: absolute;
+  right: 1%;
+  top: 1%;
+  min-width: 4.5em;
+  font-size: 100%;
+}
+
+.toggle-theme-dark {
+  position: absolute;
+  right: 1%;
+  top: 1%;
+  min-width: 4.5em;
+  font-size: 100%;
+}
+
+@media screen and (min-width: 1700px) {
+	.toggle-theme-light {
+	  position: fixed;
+	}
+
+	.toggle-theme-dark {
+	  position: fixed;
+	}
+}
+
+body.force-theme-dark .toggle-theme-light {
+  display: inline-block !important;
+  }
+body.force-theme-dark .toggle-theme-dark {
+  display: none !important;
+}
+
+body.force-theme-light .toggle-theme-light {
+  display: none !important;
+}
+
+body.force-theme-light .toggle-theme-dark {
+  display: inline-block !important;
+}
+
+
+@media screen and (max-width: 980px) {
+	.short-icons {
+		margin: 0 0 -2em 0;
+	}
+
+	#invisible-header {
+		display: none;
+	}
+}
+
+/* Tooltip container */
+.tooltip {
+ position: relative;
+}
+
+/* Tooltip text */
+.tooltip .tooltiptext {
+ visibility: hidden;
+ /*width: 10vw;*/
+ background-color: #a5125b;
+ color: LavenderBlush;
+ text-align: center;
+ padding: 5px 5px;
+ border-radius: 6px;
+
+ /* Position the tooltip text */
+ position: absolute;
+ z-index: 1;
+ bottom: 125%;
+ left: 50%;
+ margin-left: -60px;
+
+ /* Fade in tooltip */
+ opacity: 0;
+ transition: opacity 0.3s;
+ transition-delay: 0.5s;
+ transition-timing-function: ease-in;
+}
+
+/* Tooltip arrow */
+.tooltip .tooltiptext::after {
+ content: "";
+ position: absolute;
+ top: 100%;
+ left: 50%;
+ margin-left: -5px;
+ border-width: 5px;
+ border-style: solid;
+ border-color: #a5125b transparent transparent transparent;
+}
+
+/* Show the tooltip text when you mouse over the tooltip container */
+.tooltip:hover .tooltiptext {
+ visibility: visible;
+ opacity: 1;
+}
+
+
+.attribution {
+	position: static;
+	padding-left:1%;
+	padding-bottom:0.8%;
+	font-size: 1.5vh !important;
+	opacity: 0.5;
+}
+
+body {
+	font-size: 12pt;
+	font-weight: reset;
+}
+
+p a {
+	@include vendor('transition', (
+		'color #{_duration(transition)} ease',
+		'border-bottom #{_duration(transition)} ease'
+	));
+	text-decoration: none;
+	border-bottom: none;
+	color: #632844;
+	background-color: #a98f9e26;
+	padding: 0 .1rem;
+	border-radius: 5px;
+	font-weight: _font(weight-bold);
+
+
+	&:hover {
+		border-bottom-color: transparent;
+	}
+}
+
+#nav ul li a {
+	background-color: inherit;
+}
+
+#footer a {
+	color: rgba(255,255,255,0.65);
+	background-color: inherit;
+}
+
+/* Fancy underline */
+/*.icon {
+	background-image: none;
+}
+
+#nav ul li a {
+	background-image: none;
+}
+
+.button {
+	background-image: none;
+}
+
+#main.force-theme-dark a {
+	--line: RGBA(255, 255, 255, 0.5);
+}
+
+#main a {
+	--line: RGBA(165, 18, 91, 0.5);
+	border-bottom: none;
+}
+
+a {
+	--line: RGBA(255, 255, 255, 0.5);
+	border-bottom: none;
+}
+
+a svg {
+	background-image: none;
+}
+
+a {
+	background-image: linear-gradient(0deg, var(--line) 0%, var(--line) 100%);
+	background-position: 100% 100%;
+	background-repeat: no-repeat;
+	background-size: var(--background-size, 100%) 1px;
+	transition: background-size 0.2s linear var(--background-delay, 0.15s);
+	line-height: 20px;
+	transform: translateZ(0);
+}
+
+a svg {
+	opacity: 50%;
+	vertical-align: top;
+	display: inline;
+	line-height: 1;
+	width: 13px;
+	height: 20px;
+	position: relative;
+	left: -2px;
+	top: 0.3em;
+	fill: none;
+	stroke-linecap: round;
+	stroke-linejoin: round;
+	stroke-width: 1px;
+	stroke: var(--line);
+	stroke-dasharray: 7.95 30;
+	stroke-dashoffset: var(--stroke-dashoffset, 46);
+	transition: stroke-dashoffset var(--stroke-duration, 0.15s) var(--stroke-easing, linear) var(--stroke-delay, 0s);
+}
+
+a:hover {
+	--background-size: 0%;
+	--background-delay: 0s;
+	--stroke-dashoffset: 26;
+	--stroke-duration: .3s;
+	--stroke-easing: cubic-bezier(0.3, 1.5, 0.5, 1);
+	--stroke-delay: .195s;
+}
+
+html {
+	box-sizing: border-box;
+	-webkit-font-smoothing: antialiased;
+}
+
+* {
+	box-sizing: inherit;
+}
+
+*:before, *:after {
+	box-sizing: inherit;
+}
+*/
+
+.photo-gallery {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: flex-start;
+	justify-content: center;
+}
+
+.image.fit.photo {
+	flex: 1;
+	min-width: 35%;
+	position: relative;
+	margin-right: 1em;
+}
+
+#main > .main.no-top-padding {
+	padding: 0em 1em 5em 1em;
+}
+
+#main-logo {
+	display: block;
+	margin: 0 auto 1rem auto;
+	height: 5rem;
+}
