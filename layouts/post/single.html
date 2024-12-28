@@ -9,6 +9,7 @@
     {{ partial "head.html" . }}
 	</head>
 	<body>
+    
 
 		<!-- Wrapper -->
 			<div id="wrapper">
@@ -19,9 +20,12 @@
           <h2 class="p-name">{{ .Title }}</h2>
           {{ end }}
 					</header>
-
+          <nav id="nav">
+            {{ partial "breadcrumbs.html" . }}
+          </nav>
 				<!-- Main -->
 					<div id="main">
+            
             <section id="content" class="main">
 
 						<!-- Content -->

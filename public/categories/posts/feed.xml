@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Posts on snugg.ie</title>
+    <link>http://localhost:1313/categories/posts/</link>
+    <description>Recent content in Posts on snugg.ie</description>
+    <generator>Hugo</generator>
+    <language>en-gb</language>
+    <lastBuildDate>Tue, 24 Dec 2024 22:06:59 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/categories/posts/feed.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title></title>
+      <link>http://localhost:1313/2024/12/25/happy-holidays/</link>
+      <pubDate>Wed, 25 Dec 2024 08:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/2024/12/25/happy-holidays/</guid>
+      <description>Happy holidays!</description>
+    </item>
+    <item>
+      <title></title>
+      <link>http://localhost:1313/2024/12/24/i-have-only-just-gotten/</link>
+      <pubDate>Tue, 24 Dec 2024 15:31:09 +0000</pubDate>
+      <guid>http://localhost:1313/2024/12/24/i-have-only-just-gotten/</guid>
+      <description>I have only just gotten introduced to the power of RSS readers. What are some of your favourite RSS feeds to subscribe to?</description>
+    </item>
+    <item>
+      <title></title>
+      <link>http://localhost:1313/2024/12/22/up-high/</link>
+      <pubDate>Sun, 22 Dec 2024 18:00:45 +0000</pubDate>
+      <guid>http://localhost:1313/2024/12/22/up-high/</guid>
+      <description>Up high</description>
+    </item>
+    <item>
+      <title></title>
+      <link>http://localhost:1313/2024/12/20/oh-dear-our.html</link>
+      <pubDate>Fri, 20 Dec 2024 15:22:31 +0000</pubDate>
+      <guid>http://localhost:1313/2024/12/20/oh-dear-our.html</guid>
+      <description>Oh dear, our cat has taken a bite of the Christmas cake!</description>
+    </item>
+    <item>
+      <title></title>
+      <link>http://localhost:1313/2024/12/19/amberage-plain-old.html</link>
+      <pubDate>Thu, 19 Dec 2024 12:28:05 +0000</pubDate>
+      <guid>http://localhost:1313/2024/12/19/amberage-plain-old.html</guid>
+      <description>@amberage plain, old, simple, Garak</description>
+    </item>
+    <item>
+      <title></title>
+      <link>http://localhost:1313/2024/12/19/made-double-vegetarian.html</link>
+      <pubDate>Thu, 19 Dec 2024 12:04:52 +0000</pubDate>
+      <guid>http://localhost:1313/2024/12/19/made-double-vegetarian.html</guid>
+      <description>Made double vegetarian fish finger sandwiches with tartare sauce, mushy peas and chip-shop style curry sauce</description>
+    </item>
+    <item>
+      <title></title>
+      <link>http://localhost:1313/2023/11/01/what-are-the.html</link>
+      <pubDate>Wed, 01 Nov 2023 21:48:51 +0000</pubDate>
+      <guid>http://localhost:1313/2023/11/01/what-are-the.html</guid>
+      <description>What are the differences between ActivityPub and whatever BlueSky runs on?</description>
+    </item>
+    <item>
+      <title></title>
+      <link>http://localhost:1313/2023/10/23/gosh.html</link>
+      <pubDate>Mon, 23 Oct 2023 09:04:26 +0000</pubDate>
+      <guid>http://localhost:1313/2023/10/23/gosh.html</guid>
+      <description>Gosh</description>
+    </item>
+    <item>
+      <title></title>
+      <link>http://localhost:1313/2023/10/12/agh-have-a.html</link>
+      <pubDate>Thu, 12 Oct 2023 06:36:16 +0000</pubDate>
+      <guid>http://localhost:1313/2023/10/12/agh-have-a.html</guid>
+      <description>Agh have a cold, welcome to October</description>
+    </item>
+    <item>
+      <title></title>
+      <link>http://localhost:1313/2023/10/12/gosh-the-fediverse.html</link>
+      <pubDate>Thu, 12 Oct 2023 06:34:30 +0000</pubDate>
+      <guid>http://localhost:1313/2023/10/12/gosh-the-fediverse.html</guid>
+      <description>Gosh the fediverse is properly blowing up and I love it</description>
+    </item>
+    <item>
+      <title></title>
+      <link>http://localhost:1313/2023/06/15/google-maps-where.html</link>
+      <pubDate>Thu, 15 Jun 2023 20:35:28 +0000</pubDate>
+      <guid>http://localhost:1313/2023/06/15/google-maps-where.html</guid>
+      <description>google maps where are you sending me</description>
+    </item>
+    <item>
+      <title></title>
+      <link>http://localhost:1313/2023/06/02/gosh-social-media.html</link>
+      <pubDate>Fri, 02 Jun 2023 17:25:30 +0000</pubDate>
+      <guid>http://localhost:1313/2023/06/02/gosh-social-media.html</guid>
+      <description>gosh social media is so much effort to keep up with</description>
+    </item>
+    <item>
+      <title></title>
+      <link>http://localhost:1313/2023/01/28/mic-welcome-to.html</link>
+      <pubDate>Sat, 28 Jan 2023 09:44:49 +0000</pubDate>
+      <guid>http://localhost:1313/2023/01/28/mic-welcome-to.html</guid>
+      <description>@mic Welcome to a new day! ✨ 🌅 ⛅</description>
+    </item>
+    <item>
+      <title></title>
+      <link>http://localhost:1313/2023/01/28/warm-coffee-mornings.html</link>
+      <pubDate>Sat, 28 Jan 2023 09:19:53 +0000</pubDate>
+      <guid>http://localhost:1313/2023/01/28/warm-coffee-mornings.html</guid>
+      <description>Warm coffee mornings, cold snowy evenings! ☕️❄️</description>
+    </item>
+    <item>
+      <title></title>
+      <link>http://localhost:1313/2022/11/28/embrace-chaos.html</link>
+      <pubDate>Mon, 28 Nov 2022 18:24:57 +0000</pubDate>
+      <guid>http://localhost:1313/2022/11/28/embrace-chaos.html</guid>
+      <description>embrace chaos! 🔥</description>
+    </item>
+    <item>
+      <title></title>
+      <link>http://localhost:1313/2022/11/09/wandering-around-primark.html</link>
+      <pubDate>Wed, 09 Nov 2022 10:02:18 +0000</pubDate>
+      <guid>http://localhost:1313/2022/11/09/wandering-around-primark.html</guid>
+      <description>Wandering around Primark looking for Greggs sausage socks but there are none to be found!</description>
+    </item>
+    <item>
+      <title></title>
+      <link>http://localhost:1313/2022/10/27/wow-ive-felt.html</link>
+      <pubDate>Thu, 27 Oct 2022 01:10:31 +0000</pubDate>
+      <guid>http://localhost:1313/2022/10/27/wow-ive-felt.html</guid>
+      <description>Wow, I’ve felt so powerful lately!</description>
+    </item>
+    <item>
+      <title></title>
+      <link>http://localhost:1313/2022/10/11/so-excited-for.html</link>
+      <pubDate>Tue, 11 Oct 2022 18:53:05 +0000</pubDate>
+      <guid>http://localhost:1313/2022/10/11/so-excited-for.html</guid>
+      <description>So excited for Halloween! I’m throwing pumpkin glitter everywhere 🎃</description>
+    </item>
+    <item>
+      <title></title>
+      <link>http://localhost:1313/2022/09/29/gosh-im-stoked.html</link>
+      <pubDate>Thu, 29 Sep 2022 13:51:08 +0000</pubDate>
+      <guid>http://localhost:1313/2022/09/29/gosh-im-stoked.html</guid>
+      <description>Gosh, I’m stoked to be back in London again. 😌</description>
+    </item>
+    <item>
+      <title></title>
+      <link>http://localhost:1313/2022/09/26/wow-as-of.html</link>
+      <pubDate>Mon, 26 Sep 2022 19:34:13 +0000</pubDate>
+      <guid>http://localhost:1313/2022/09/26/wow-as-of.html</guid>
+      <description>Wow! As of today, I&amp;#39;m now a systems engineer for @amazon&amp;#39;s 📦 @awscloud ☁️ I can&amp;#39;t wait to learn and see what&amp;#39;s in store for the future! #aws #newjob #day1</description>
+    </item>
+    <item>
+      <title></title>
+      <link>http://localhost:1313/2022/09/14/cinnabynmastodonart.html</link>
+      <pubDate>Wed, 14 Sep 2022 00:57:43 +0000</pubDate>
+      <guid>http://localhost:1313/2022/09/14/cinnabynmastodonart.html</guid>
+      <description>@cinnabyn@mastodon.art 😴</description>
+    </item>
+    <item>
+      <title></title>
+      <link>http://localhost:1313/2022/09/12/natanox-yeah-im.html</link>
+      <pubDate>Mon, 12 Sep 2022 16:28:14 +0000</pubDate>
+      <guid>http://localhost:1313/2022/09/12/natanox-yeah-im.html</guid>
+      <description>@Natanox Yeah, I’m pretty sure you’re right, it’s toast 😅 I can see the copper on the inside of the motherboard</description>
+    </item>
+    <item>
+      <title></title>
+      <link>http://localhost:1313/2022/09/12/geerd-gosh-if.html</link>
+      <pubDate>Mon, 12 Sep 2022 16:26:56 +0000</pubDate>
+      <guid>http://localhost:1313/2022/09/12/geerd-gosh-if.html</guid>
+      <description>@Geerd Gosh. If you’re curious, this was an Intel Xeon S1200BTL server board</description>
+    </item>
+    <item>
+      <title></title>
+      <link>http://localhost:1313/2022/09/12/ah-gosh-today.html</link>
+      <pubDate>Mon, 12 Sep 2022 16:07:22 +0000</pubDate>
+      <guid>http://localhost:1313/2022/09/12/ah-gosh-today.html</guid>
+      <description>Ah gosh, today I had my backup server&amp;#39;s motherboard pop. One of the VRM&amp;#39;s set on fire and released a lot of toxic magic smoke. Disappointing! ☠️🖥️🔥</description>
+    </item>
+    <item>
+      <title></title>
+      <link>http://localhost:1313/2022/08/31/amberage-httpstaishinmiyamotocomshadowban-how.html</link>
+      <pubDate>Wed, 31 Aug 2022 22:31:57 +0000</pubDate>
+      <guid>http://localhost:1313/2022/08/31/amberage-httpstaishinmiyamotocomshadowban-how.html</guid>
+      <description>@amberage https://taishin-miyamoto.com/ShadowBan/ How does it look here?</description>
+    </item>
+  </channel>
+</rss>
