@@ -39,7 +39,33 @@
                 {{ $poststoshow := where $posts "Params.categories" "intersect" (slice "blogs" "posts") }}
                 {{ $paginator := .Paginate $posts }}
                 {{ range $paginator.Pages }}
-                  <div class="card"><a href="{{ .Permalink }}"><div class="card-body"><h2>{{ .Title }}</h2><p>{{ .Content }}</p><h5>{{ .Date.Format "Jan 2, 2006" }}</h5></div></a></div>
+                  <div class="card"><a href="{{ .Permalink }}">
+                    <div class="card-body">
+                      <h2>{{ .Title }}</h2>
+                      {{ if in .RawContent "<!--more-->" }}
+                      <div class="p-summary">
+                          {{ $splitContents := split .RawContent "<!--more-->" }}
+                          {{ $summary := index $splitContents 0 }}
+                          {{ $summary := replaceRE "\\[\\^.*?\\]" "" $summary }}
+                          {{ $summary := replaceRE "\\n\\[\\^.*?\\]:.*" "" $summary }}
+                          {{ $summary | markdownify }}
+                          <p><a class="read-more" href="{{ .Permalink }}">
+                              {{ if templates.Exists "partials/microhook-read-more-text.html" }}
+                              {{ partial "microhook-read-more-text.html" . }}
+                              {{ else }}
+                              Read More →
+                              {{ end }}
+                          </a></p>
+                      </div>
+                  {{ else }}
+                      <div class="e-content">
+                          {{ .Content }}
+                      </div>
+                  {{ end }}
+                    <h5>{{ .Date.Format "Jan 2, 2006" }}</h5>
+                  </div>
+                </a>
+              </div>
                 {{ end }}
               </div>
               </section>
