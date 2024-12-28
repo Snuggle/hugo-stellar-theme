@@ -42,6 +42,7 @@
     {{ end }}
   </ul>
   {{ end }}
+  <script type="text/javascript" src="https://micro.blog/conversation.js?url={{ .Permalink }}"></script>
   <ul class="reply-buttons">
     {{ if or (templates.Exists "partials/reply-by-email.html") (templates.Exists "partials/conversation-link.html") (templates.Exists "partials/plugin_tinylytics.html") (templates.Exists "partials/reply-on-mastodon.html") (templates.Exists "partials/microhook-share-button.html")}}
       {{ if templates.Exists "partials/reply-by-email.html" }}
@@ -72,4 +73,3 @@
 </html>
 
 
-<script type="text/javascript" src="https://micro.blog/conversation.js?url={{ .Permalink }}"></script>
