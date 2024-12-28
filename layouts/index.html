@@ -79,6 +79,18 @@
                   {{end}}
                 </section>
               {{ end }}
+
+              <section id="posts" class="main special">
+
+              <div class="cards">
+                {{ $posts := where .Site.Pages "Type" "post" }}
+                {{ $poststoshow := where $posts "Params.categories" "intersect" (slice "blogs" "posts") }}
+                {{ $paginator := .Paginate $posts }}
+                {{ range $paginator.Pages }}
+                  <div class="card"><a href="{{ .Permalink }}"><div class="card-body"><p>{{ .Content }}</p><h5>{{ .Date.Format "Jan 2, 2006" }}</h5></div></a></div>
+                {{ end }}
+              </div>
+              </section>
           
           </div>
 
