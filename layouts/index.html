@@ -1,98 +1,121 @@
 <!DOCTYPE HTML>
 {{ "<!--" | safeHTML}}
-  Stellar by HTML5 UP
-  html5up.net | @ajlkn
-  Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
-{{ "-->" | safeHTML }}
+	Stellar by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+	{{ "-->" | safeHTML }}
 <html>
-  <head>
-    {{ partial "head.html" . }}
-  </head>
-  <body>
-
-    <!-- Wrapper -->
-      <div id="wrapper">
-          {{ .Data.Posts }}
-
-        <!-- Header -->
-          {{ partial "header.html" . }}
-
-        <!-- Nav -->
-          {{ partial "navigation.html" . }}
-
-        <!-- Main -->
-          <div id="main">
-
-            <!-- Introduction -->
-              {{ partial "intro.html" . }}
-
-                  <!-- section features -->
-                  
-                  
-
-              <section id="posts" class="main special">
-                <header class="major">
-                  <h2>My Posts</h2>
-                  </header>
-                <div class="grid" data-masonry='{ "itemSelector": ".grid-item", "isFitWidth": true, "gutter": 20 }'>
-                {{ $posts := where .Site.Pages "Type" "post" }}
-                {{ $poststoshow := where $posts "Params.categories" "intersect" (slice "blogs" "posts") }}
-                {{ $paginator := .Paginate $posts }}
-                {{ range $paginator.Pages }}
-                  <div class="card grid-item"><a href="{{ .Permalink }}">
-                    <div class="card-body">
-                      <h2>{{ .Title }}</h2>
-                      {{ if in .RawContent "<!--more-->" }}
-                      <div class="p-summary">
-                          {{ $splitContents := split .RawContent "<!--more-->" }}
-                          {{ $summary := index $splitContents 0 }}
-                          {{ $summary := replaceRE "\\[\\^.*?\\]" "" $summary }}
-                          {{ $summary := replaceRE "\\n\\[\\^.*?\\]:.*" "" $summary }}
-                          {{ $summary | markdownify }}
-                          <p><a class="read-more" href="{{ .Permalink }}">
-                              {{ if templates.Exists "partials/microhook-read-more-text.html" }}
-                              {{ partial "microhook-read-more-text.html" . }}
-                              {{ else }}
-                              Read More →
-                              {{ end }}
-                          </a></p>
-                      </div>
-                  {{ else }}
-                      <div class="e-content">
-                          {{ .Content }}
-                      </div>
-                  {{ end }}
-                    <h5>{{ .Date.Format "Jan 2, 2006" }}</h5>
-                  </div>
+	<head>
+		{{ partial "head.html" . }}
+	</head>
+	<body>
+		<!-- Wrapper -->
+		<div id="wrapper">
+			{{ .Data.Posts }}
+			<!-- Header -->
+			{{ partial "header.html" . }}
+			<!-- Nav -->
+			{{ partial "navigation.html" . }}
+			<!-- Main -->
+			<div id="main">
+				<!-- Introduction -->
+				{{ partial "intro.html" . }}
+				<!-- section features -->
+				<section id="posts" class="main special">
+					<header class="major">
+						<h2>My Posts</h2>
+					</header>
+					<div class="grid" data-masonry='{ "itemSelector": ".grid-item", "isFitWidth": true, "gutter": 20 }'>
+            {{ $pinned := .Site.Taxonomies.categories.pinned }}
+            {{ if $pinned }}
+            {{ range last 3 $pinned }}
+              <div class="card grid-item">
+                <a href="{{ .Permalink }}">
+                  <div class="card-body">
+                    <h2>📌 {{ .Title }}</h2>
+                    {{ if in .RawContent "<!--more-->" }}
+                    <div class="p-summary">
+                      {{ $splitContents := split .RawContent "<!--more-->" }}
+                      {{ $summary := index $splitContents 0 }}
+                      {{ $summary := replaceRE "\\[\\^.*?\\]" "" $summary }}
+                      {{ $summary := replaceRE "\\n\\[\\^.*?\\]:.*" "" $summary }}
+                      {{ $summary | markdownify }}
+                      <p>
+                <a class="read-more" href="{{ .Permalink }}">
+                {{ if templates.Exists "partials/microhook-read-more-text.html" }}
+                {{ partial "microhook-read-more-text.html" . }}
+                {{ else }}
+                Read More →
+                {{ end }}
+                </a></p>
+                </div>
+                {{ else }}
+                <div class="e-content">
+                {{ .Content }}
+                </div>
+                {{ end }}
+                <h5>{{ .Date.Format "Jan 2, 2006" }}</h5>
+                </div>
                 </a>
               </div>
+						{{ end }}
+            {{ end }}
+						{{ $posts := where .Site.Pages "Type" "post" }}
+						{{ $poststoshow := where $posts "Params.categories" "intersect" (slice "blogs" "posts") }}
+						{{ $paginator := .Paginate $posts }}
+						{{ range $paginator.Pages }}
+              <div class="card grid-item">
+                <a href="{{ .Permalink }}">
+                  <div class="card-body">
+                    <h2>{{ .Title }}</h2>
+                    {{ if in .RawContent "<!--more-->" }}
+                    <div class="p-summary">
+                      {{ $splitContents := split .RawContent "<!--more-->" }}
+                      {{ $summary := index $splitContents 0 }}
+                      {{ $summary := replaceRE "\\[\\^.*?\\]" "" $summary }}
+                      {{ $summary := replaceRE "\\n\\[\\^.*?\\]:.*" "" $summary }}
+                      {{ $summary | markdownify }}
+                      <p>
+                <a class="read-more" href="{{ .Permalink }}">
+                {{ if templates.Exists "partials/microhook-read-more-text.html" }}
+                {{ partial "microhook-read-more-text.html" . }}
+                {{ else }}
+                Read More →
                 {{ end }}
+                </a></p>
+                </div>
+                {{ else }}
+                <div class="e-content">
+                {{ .Content }}
+                </div>
+                {{ end }}
+                <h5>{{ .Date.Format "Jan 2, 2006" }}</h5>
+                </div>
+                </a>
               </div>
-              </section>
-
-              <section id="where" class="main special">
-                <header class="major">
-                    <h2>Where can I find you?</h2>
-                    <p>Huh, you would like to talk to me? Sure!<br>
-                    You've found the right place, just click below. Please be polite! 😇</p>
-                </header>
-                <footer class="major">
-                    <ul class="actions special">
-                        <li><a href="contact" class="button primary">Contact me!</a></li>
-                    </ul>
-                </footer>
-            </section>
-          
-          </div>
-
-        <!-- Footer -->
-          {{ partial "footer.html" . }}
-
-      </div>
-
-    <!-- Scripts -->
-      {{ partial "scripts.html" . }}
-      <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
-      {{- partial "footer_custom.html" . }}
-  </body>
+						{{ end }}
+					</div>
+				</section>
+				<section id="where" class="main special">
+					<header class="major">
+						<h2>Where can I find you?</h2>
+						<p>Huh, you would like to talk to me? Sure!<br>
+							You've found the right place, just click below. Please be polite! 😇
+						</p>
+					</header>
+					<footer class="major">
+						<ul class="actions special">
+							<li><a href="contact" class="button primary">Contact me!</a></li>
+						</ul>
+					</footer>
+				</section>
+			</div>
+			<!-- Footer -->
+			{{ partial "footer.html" . }}
+		</div>
+		<!-- Scripts -->
+		{{ partial "scripts.html" . }}
+		<script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
+		{{- partial "footer_custom.html" . }}
+	</body>
 </html>
