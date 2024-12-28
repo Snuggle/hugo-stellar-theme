@@ -521,3 +521,8 @@ ul.post-tags li {
 #content p img {
 	width: 100%;
 }
+
+.microblog_conversation { 
+	border-top: solid lightgray 1px;
+	padding: 5px;
+}
