@@ -10,4 +10,4 @@ categories:
 - "Posts"
 ---
 
-Lorem ipsum dolor imit
+Wandering around Primark looking for Greggs sausage socks but there are none to be found!

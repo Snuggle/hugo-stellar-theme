@@ -26,71 +26,36 @@
             <!-- Introduction -->
               {{ partial "intro.html" . }}
 
-            <!-- Sections -->
-              {{ $list := .Site.Params.section }}
-              {{ range $index, $section := $list }}
-                <section id="{{$section.id}}" class="main special">
-                  <header class="major">
-                    <h2>{{ $section.title }}</h2>
-                    <p>{{ $section.description | markdownify }}</p>
-                  </header>
-                  
                   <!-- section features -->
-                  {{ if $section.features.enable }}
-                    <ul class="features">
-                      {{ range $count, $feature := $section.feature }}
-                      <li>
-                        <span class="icon major style{{ add $count 1 }} {{ $feature.icon }}"></span>
-                        <h3>{{ $feature.title }} </h3>
-                        <p>{{ $feature.description | markdownify }}</p>
-                      </li>
-                      {{end}}
-                    </ul>
-                  {{ end }}
-
-                  <!-- section statistics -->
-                  {{ if $section.statistics.enable }}
-                    <ul class="statistics">
-                      {{ range $count, $stat := $section.statistic }}
-                        <li class="style{{add $count 1}}">
-                          <span class="icon {{ $stat.icon }} "></span>
-                          <strong>{{ $stat.value }}</strong> {{ $stat.text }}
-                        </li>
-                      {{ end }}
-                    </ul>
-                  {{ end }}
-
-                  <!-- section content -->
-                  {{ if $section.content.enable }}
-                    <p class="content">{{ $section.content.text }}</p>
-                  {{ end }}
                   
-                  <!-- section footer/cta -->
-                  {{ if $section.footer.enable }}
-                    <footer class="major">
-                      <ul class="actions">
-                        {{range $button := $section.footer.action }}
-                          <li>
-                            <a href="{{ $button.buttonUrl }}" class="button {{ $button.customClass }}">{{ $button.buttontext }}</a>
-                          </li>
-                        {{ end }}
-                      </ul>
-                    </footer>
-                  {{end}}
-                </section>
-              {{ end }}
+                  
 
               <section id="posts" class="main special">
-
+                <header class="major">
+                  <h2>My Posts</h2>
+                  </header>
               <div class="cards">
                 {{ $posts := where .Site.Pages "Type" "post" }}
                 {{ $poststoshow := where $posts "Params.categories" "intersect" (slice "blogs" "posts") }}
                 {{ $paginator := .Paginate $posts }}
                 {{ range $paginator.Pages }}
-                  <div class="card"><a href="{{ .Permalink }}"><div class="card-body"><p>{{ .Content }}</p><h5>{{ .Date.Format "Jan 2, 2006" }}</h5></div></a></div>
+                  <div class="card"><a href="{{ .Permalink }}"><div class="card-body"><h2>{{ .Title }}</h2><p>{{ .Content }}</p><h5>{{ .Date.Format "Jan 2, 2006" }}</h5></div></a></div>
                 {{ end }}
               </div>
               </section>
+
+              <section id="where" class="main special">
+                <header class="major">
+                    <h2>Where can I find you?</h2>
+                    <p>Huh, you would like to talk to me? Sure!<br>
+                    You've found the right place, just click below. Please be polite! 😇</p>
+                </header>
+                <footer class="major">
+                    <ul class="actions special">
+                        <li><a href="contact" class="button primary">Contact me!</a></li>
+                    </ul>
+                </footer>
+            </section>
           
           </div>
 

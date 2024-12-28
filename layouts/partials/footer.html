@@ -1,42 +1,39 @@
 <footer id="footer">
   <section>
-    <h2>{{ .Site.Params.footer.title }}</h2>
-    <p>{{ .Site.Params.footer.description | markdownify }}</p>
+    <h2>✨ 	
+      <a href="/">snugg.ie</a>
+    </h2>
+    <p>Evie's small personal website for hosting my own projects and centralizing all of my internet-related stuff within one place.
     <ul class="actions">
-      {{range $button := .Site.Params.footer.action }}
-        <li>
-          <a href="{{ $button.href }}" class="button {{ $button.customClass }}">{{ $button.buttontext }}</a>
-        </li>
-      {{ end }}
-    </ul>
-
-  </section>
-  <section>
-    <h2>{{ .Site.Params.footer.second_title }}</h2>
-    <dl class="alt">
-      {{ with .Site.Params.footer.address }}
-        <dt>Address</dt>
-        <dd>{{ . | markdownify }}</dd>
-      {{ end }}
-      {{ with .Site.Params.footer.phone }}
-        <dt>Phone</dt>
-        <dd>{{ . | markdownify }}</dd>
-      {{ end }}
-      <dt>Email</dt>
-      <dd><a href="mailto:{{.Site.Params.footer.email}}">{{.Site.Params.footer.email | markdownify }}</a></dd>
-    </dl>
-  
-    {{ if .Site.Params.footer.social_list.enable }}
+          <li><a href="https://posts.snugg.ie/2020/12/23/lets-look-into.html" class="button">🖥️ — What am I running on?</a></li>
+      </ul>
+      {{ if .Site.Params.footer.social_list.enable }}
       <ul class="icons">
         {{ range .Site.Params.footer.social }}
           <li><a href="{{ .link }}" class="icon alt {{ .icon }}"><span class="label">{{ .title }}</span></a></li>
         {{ end }}
       </ul>
     {{ end }}
+
+  </section>
+  <section>
+    <h2>Thanks</h2>
+    <dl class="alt">
+      {{ with .Site.Params.footer.address }}
+        <dt>Platform</dt>
+        <dd>micro.blog</dd>
+      {{ end }}
+      {{ with .Site.Params.footer.phone }}
+        <dt>Theme</dt>
+        <dd>Stellar by HTML5UP</dd>
+      {{ end }}
+    </dl>
   </section>
   
   {{ if .Site.Params.footer.copyright.enable }}
-    <p class="copyright">{{.Site.Params.footer.copyright.text | markdownify }}.</p>      
+  <p class="copyright"><a href="https://posts.snugg.ie/feed.xml">RSS</a> - <a href="https://posts.snugg.ie/feed.json">JSON</a><br><br>
+    <img width="50px" alt="An abstract logo which shows three sprinkles, like the sprinkles on a cake." src="https://snugg.ie/assets/images/sprinkles/vector/sprinkles.svg"><br>
+  {{.Site.Params.footer.copyright.text | markdownify }}</p>      
   {{ end }}
 
 </footer>

@@ -142,19 +142,15 @@
       "navigation": [
           {
               "href": "#intro",
-              "name": "Introduction"
+              "name": "Who are you?"
           },
           {
-              "href": "#first",
-              "name": "First Section"
+              "href": "#posts",
+              "name": "What's going on?"
           },
           {
-              "href": "#second",
-              "name": "Second Section"
-          },
-          {
-              "href": "#cta",
-              "name": "Get Started"
+              "href": "#where",
+              "name": "Where can I contact you?"
           }
       ],
       "section": [
@@ -303,7 +299,7 @@
           ],
           "copyright": {
               "enable": true,
-              "text": "© Untitled, Design: [HTML5UP](//html5up.net)"
+              "text": ""
           },
           "social_list": {
               "enable": true
