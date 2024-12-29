@@ -1,4 +1,5 @@
 {{ define "main" }}
+<div id="main">
 <div class="page">
 
   {{ if templates.Exists "partials/microhook-before-page-content.html" }}
@@ -20,5 +21,6 @@
   {{ partial "microhook-after-page-content.html" . }}
   {{ end }}
 
+</div>
 </div>
 {{ end }}
