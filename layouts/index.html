@@ -100,7 +100,7 @@
                 <a class="u-syndication icon fa-brands fa-bluesky" {{ printf "href=%q" .Params.bluesky.link | safeHTMLAttr }} ></a>
                 {{ end }}  
                 {{ if .Params.mastodon }}
-                <a class="u-syndication icon fa-brands fa-mastodon" {{ printf "href=%q" .Params.mastodon.id | safeHTMLAttr }} ></a>
+                <a class="u-syndication icon fa-brands fa-mastodon" {{ printf "href=%q" ( print .Params.mastodon.hostname .Params.mastodon.username .Params.mastodon.id )}} ></a>
                 {{ end }} 
                 </span> 
                 <br>
