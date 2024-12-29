@@ -5,11 +5,11 @@
       "avatar": "https://micro.blog/snuggle/avatar.jpg",
       "username": "snuggle",
       "activitypub": {
-          "username": "[ACTIVITYPUB_USERNAME]",
+          "username": "snuggle",
           "url": "[ACTIVITYPUB_ACTOR]"
       }
   },
-  "baseURL": "https://posts.snugg.ie/",
+  "baseURL": "https://snugg.ie/",
   "mediaTypes": {
       "application/json": {
           "suffixes": [
@@ -322,6 +322,6 @@
           ]
       }
   },
-  "baseurl": "https://snuggle-test.micro.blog",
+  "baseurl": "https://snugg.ie",
   "googleAnalytics": ""
 }

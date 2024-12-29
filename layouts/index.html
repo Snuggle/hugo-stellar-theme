@@ -92,7 +92,10 @@
                 <h5>{{ .Date.Format "Jan 2, 2006" }}</h5>
                 </div>
                 </a>
-              </div>
+                {{ if .Params.bluesky }}
+                <a class="u-syndication" {{ printf "href=%q" .Params.bluesky.url | safeHTMLAttr }} style="display: none;">Also on Bluesky</a>
+                {{ end }}
+                </div>
 						{{ end }}
 					</div>
           <div class="post-nav">
