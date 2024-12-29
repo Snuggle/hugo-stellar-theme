@@ -14,24 +14,10 @@
     {{ end }}
 
   </section>
-  <section>
-    <h2>Thanks</h2>
-    <dl class="alt">
-      {{ with .Site.Params.footer.address }}
-        <dt>Platform</dt>
-        <dd>micro.blog</dd>
-      {{ end }}
-      {{ with .Site.Params.footer.phone }}
-        <dt>Theme</dt>
-        <dd>Stellar by HTML5UP</dd>
-      {{ end }}
-    </dl>
-  </section>
   
   {{ if .Site.Params.footer.copyright.enable }}
-  <p class="copyright"><a href="https://posts.snugg.ie/feed.xml">RSS</a> - <a href="https://posts.snugg.ie/feed.json">JSON</a><br><br>
-    <img width="50px" alt="An abstract logo which shows three sprinkles, like the sprinkles on a cake." src="/images/sprinkles/vector/sprinkles.svg"><br>
-  {{.Site.Params.footer.copyright.text | markdownify }}</p>      
+  <p class="copyright"><a href="https://snugg.ie/feed.xml">RSS</a> - <a href="https://snugg.ie/feed.json">JSON</a><br><br>
+    <img width="50px" id="footer-logo" alt="An abstract logo which shows three sprinkles, like the sprinkles on a cake." src="/images/sprinkles/vector/sprinkles.svg"><br></p>      
   {{ end }}
 
 </footer>
