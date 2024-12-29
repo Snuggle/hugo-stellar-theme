@@ -68,6 +68,9 @@
                 <a href="{{ .Permalink }}">
                   <div class="card-body">
                     <h2>{{ .Title }}</h2>
+                    {{ with .Params.audio }}
+                      <script type="text/javascript" src="https://micro.blog/narration.js?url={{ . }}"></script>
+                    {{ end }}
                     {{ if in .RawContent "<!--more-->" }}
                     <div class="p-summary">
                       {{ $splitContents := split .RawContent "<!--more-->" }}
