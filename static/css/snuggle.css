@@ -539,3 +539,7 @@ img {
 #header.alt {
 	padding: 2.5em 5em 1em 5em;
 }
+
+.syndication {
+	float: right;
+}

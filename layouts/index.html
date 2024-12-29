@@ -94,11 +94,16 @@
                 {{ .Content }}
                 </div>
                 {{ end }}
-                <a href="{{ .Permalink }}" class="post-date u-url"><time class="dt-published" datetime="{{ .Date.Format "2006-01-02 15:04:05 -0700" }}">{{ .Date.Format "Jan 2, 2006" }}</time> ∞</a>                </div>
-                </a>
+                <a href="{{ .Permalink }}" class="post-date u-url"><time class="dt-published" datetime="{{ .Date.Format "2006-01-02 15:04:05 -0700" }}">{{ .Date.Format "Jan 2, 2006" }}</time> ∞</a>               
+                <span class="syndication">Also posted to: </span>
                 {{ if .Params.bluesky }}
-                <a class="u-syndication" {{ printf "href=%q" .Params.bluesky.url | safeHTMLAttr }} style="display: none;">Also on Bluesky</a>
-                {{ end }}
+                <a class="u-syndication" {{ printf "href=%q" .Params.bluesky.link | safeHTMLAttr }} style="display: none;"><a {{ printf "href=%q" .Params.bluesky.link | safeHTMLAttr }} class="icon alt fa-brands fa-mastodon"></a></a>
+                {{ end }}  
+                {{ if .Params.mastodon }}
+                <a class="u-syndication" {{ printf "href=%q" .Params.mastodon.link | safeHTMLAttr }} style="display: none;"><a {{ printf "href=%q" .Params.mastodon.url | safeHTMLAttr }} class="icon alt fa-brands fa-mastodon"></a></a>
+                {{ end }}  
+                </div>
+                </a>
                 </div>
 						{{ end }}
 					</div>
