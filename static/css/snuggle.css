@@ -530,3 +530,7 @@ ul.post-tags li {
 img {
 	max-width: 100%;
 }
+
+#footer-logo {
+	vertical-align:middle;
+}
