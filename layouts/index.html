@@ -118,7 +118,7 @@
                     <a class="u-syndication icon fa-brands fa-bluesky" {{ printf "href=%q" .Params.bluesky.link | safeHTMLAttr }} ></a>
                   {{ end }}  
                   {{ if .Params.threads }}
-                  <a class="u-syndication icon fa-brands fa-threads" {{ printf "href=%q" .Params.threads.link | safeHTMLAttr }} ></a>
+                  <a class="u-syndication icon fa-brands fa-threads" {{ printf "href=%q" .Params.threads.url | safeHTMLAttr }} ></a>
                   {{ end }} 
                 </span> 
                 {{ end }}
