@@ -95,13 +95,30 @@
                 </div>
                 {{ end }}
                 <a href="{{ .Permalink }}" class="post-date u-url"><time class="dt-published" datetime="{{ .Date.Format "2006-01-02 15:04:05 -0700" }}">{{ .Date.Format "Jan 2, 2006" }}</time> ∞</a>               
-                <span class="syndication">Also posted to: </span>
+                <span class="syndication">Also posted to:
                 {{ if .Params.bluesky }}
-                <a class="u-syndication" {{ printf "href=%q" .Params.bluesky.link | safeHTMLAttr }} style="display: none;"><a {{ printf "href=%q" .Params.bluesky.link | safeHTMLAttr }} class="icon alt fa-brands fa-mastodon"></a></a>
+                <a class="u-syndication" {{ printf "href=%q" .Params.bluesky.link | safeHTMLAttr }} style="display: none;"><a {{ printf "href=%q" .Params.bluesky.link | safeHTMLAttr }} class="icon fa-brands fa-bluesky"></a></a>
                 {{ end }}  
                 {{ if .Params.mastodon }}
-                <a class="u-syndication" {{ printf "href=%q" .Params.mastodon.link | safeHTMLAttr }} style="display: none;"><a {{ printf "href=%q" .Params.mastodon.url | safeHTMLAttr }} class="icon alt fa-brands fa-mastodon"></a></a>
-                {{ end }}  
+                <a class="u-syndication" {{ printf "href=%q" .Params.mastodon.link | safeHTMLAttr }} style="display: none;"><a {{ printf "href=%q" .Params.mastodon.url | safeHTMLAttr }} class="icon fa-brands fa-mastodon"></a></a>
+                {{ end }} 
+                </span> 
+                <br>
+                <a href="/" class="u-url">
+                  {{ if .Params.author }}
+                  <img class="u-photo avatar" src="{{ .Params.author.avatar }}" style="width:96px; height:96px; vertical-align: middle;">
+                  <div style="display: inline;">
+                    <span class="p-name dark">By {{ .Params.author.name }}</span>
+                    <span><a href="https://micro.blog/{{ .Params.author.username }}">@{{ .Params.author.username }}</a></span>
+                  </div>
+                  {{ else }}
+                  <img class="u-photo avatar" src="{{ .Site.Author.avatar }}" style="width:30px; height:30px; vertical-align: middle;">
+                  <div style="display: inline;">
+                    <span class="p-name dark">By {{ .Site.Author.name }}</span>
+                    <span><a href="https://micro.blog/{{ .Site.Author.username }}">@{{ .Site.Author.username }}</a></span>
+                  </div>
+                {{ end }}
+                  </a>
                 </div>
                 </a>
                 </div>
