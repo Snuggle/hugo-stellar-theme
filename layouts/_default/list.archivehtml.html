@@ -1,4 +1,6 @@
 {{ define "main" }}
+<div id="wrapper">
+	<div id="main">
 <div class="archive">
 	<h2 class="p-name">Archive</h2>
 	{{ if templates.Exists "partials/microhook-archive-lead.html" }}
@@ -31,5 +33,7 @@
 		{{ end }}
 	</div>
 
+</div>
+</div>
 </div>
 {{ end }}

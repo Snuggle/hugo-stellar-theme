@@ -1,5 +1,6 @@
 {{ define "main" }}
-
+<div id="wrapper">
+	<div id="main">
 	<div class="photos-grid-container" style="display: grid; grid-column-gap: 15px; grid-row-gap: 15px; grid-template-columns: 33% 33% 33%;">
 
 	{{- $list := where .Site.Pages ".Params.photos" "!=" nil -}}
@@ -13,5 +14,6 @@
 	{{ end }}
 
 	</div>
-
+</div>
+</div>
 {{ end }}
