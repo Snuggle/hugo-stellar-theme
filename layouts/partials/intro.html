@@ -4,7 +4,7 @@
       <header class="major">
         <h2>{{ .Site.Params.intro.title }}</h2>
       </header>
-      <p>{{ .Site.Params.intro.description | markdownify }}</p>
+      <p class="p-summary">{{ .Site.Params.intro.description | markdownify }}</p>
       <ul class="actions">
         {{range $button := .Site.Params.intro.action }}
           <li>
@@ -14,7 +14,7 @@
       </ul>
     </div>
     {{ if .Site.Params.intro.image }}
-      <span class="image"><img src="{{ .Site.Params.intro.image }}" alt="" /></span>
+      <span class="image"><img class="u-photo" src="{{ .Site.Params.intro.image }}" alt="" /></span>
     {{ end }}
   </div>
 </section>

@@ -10,7 +10,7 @@
 	</head>
 	<body>
 		<!-- Wrapper -->
-		<div id="wrapper">
+		<div id="wrapper" class="h-feed">
 			{{ .Data.Posts }}
 			<!-- Header -->
 			{{ partial "header.html" . }}
@@ -29,7 +29,7 @@
             {{ $pinned := .Site.Taxonomies.categories.pinned }}
             {{ if $pinned }}
             {{ range last 3 $pinned }}
-              <div class="card grid-item">
+              <div class="h-entry card grid-item">
                 <a href="{{ .Permalink }}">
                   <div class="card-body">
                     <h2>📌 {{ .Title }}</h2>
@@ -97,9 +97,6 @@
                 </a>
                 {{ if .Params.bluesky }}
                 <a class="u-syndication" {{ printf "href=%q" .Params.bluesky.url | safeHTMLAttr }} style="display: none;">Also on Bluesky</a>
-                {{ end }}
-                {{ if .Params.mastodon }}
-                <a class="u-syndication" {{ printf "href=https://tech.lgbt/@Snuggle/%q" .Params.mastodon.id | safeHTMLAttr }} style="display: none;">Also on Mastodon</a>
                 {{ end }}
                 </div>
 						{{ end }}
