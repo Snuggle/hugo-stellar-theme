@@ -535,3 +535,7 @@ img {
 #footer-logo {
 	vertical-align:middle;
 }
+
+#header.alt {
+	padding: 2.5em 5em 1em 5em;
+}
