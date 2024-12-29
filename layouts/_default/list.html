@@ -1,6 +1,7 @@
 {{ define "main" }}
 <div id="wrapper">
 <div id="main">
+<section class="main">
 {{ if templates.Exists "partials/microhook-archive-post-list.html" }}
 {{ partial "microhook-archive-post-list.html" . }}
 {{ else }}
@@ -70,6 +71,7 @@
 </div>
 {{ end }}
 {{ end }}
+</section>
 </div>
 </div>
 {{ end }}
