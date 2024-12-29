@@ -55,13 +55,16 @@
                 </div>
                 {{ end }}
                 <a href="{{ .Permalink }}" class="post-date u-url"><time class="dt-published" datetime="{{ .Date.Format "2006-01-02 15:04:05 -0700" }}">{{ .Date.Format "Jan 2, 2006" }}</time> ∞</a>
-                {{ if or ( .Params.bluesky ) ( .Params.mastodon ) }}
+                {{ if or ( .Params.bluesky ) ( .Params.mastodon ) (.Params.threads) }}
                 <span class="syndication">
+                  {{ if .Params.mastodon }}
+                  <a class="u-syndication icon fa-brands fa-mastodon" href="https://tech.lgbt/@Snuggle/{{ ( print .Params.mastodon.id ) | safeHTMLAttr }}" ></a>
+                  {{ end }} 
                   {{ if .Params.bluesky }}
                     <a class="u-syndication icon fa-brands fa-bluesky" {{ printf "href=%q" .Params.bluesky.link | safeHTMLAttr }} ></a>
                   {{ end }}  
-                  {{ if .Params.mastodon }}
-                  <a class="u-syndication icon fa-brands fa-mastodon" href="https://tech.lgbt/@Snuggle/{{ ( print .Params.mastodon.id ) | safeHTMLAttr }}" ></a>
+                  {{ if .Params.threads }}
+                  <a class="u-syndication icon fa-brands fa-threads" {{ printf "href=%q" .Params.threads.link | safeHTMLAttr }} ></a>
                   {{ end }} 
                 </span> 
                 {{ end }}
@@ -106,16 +109,19 @@
                 </div>
                 {{ end }}
                 <a href="{{ .Permalink }}" class="post-date u-url"><time class="dt-published" datetime="{{ .Date.Format "2006-01-02 15:04:05 -0700" }}">{{ .Date.Format "Jan 2, 2006" }}</time> ∞</a>               
-                {{ if or ( .Params.bluesky ) ( .Params.mastodon ) }}
-                  <span class="syndication">
-                    {{ if .Params.bluesky }}
-                      <a class="u-syndication icon fa-brands fa-bluesky" {{ printf "href=%q" .Params.bluesky.link | safeHTMLAttr }} ></a>
-                    {{ end }}  
-                    {{ if .Params.mastodon }}
-                    <a class="u-syndication icon fa-brands fa-mastodon" href="https://tech.lgbt/@Snuggle/{{ ( print .Params.mastodon.id ) | safeHTMLAttr }}" ></a>
-                    {{ end }} 
-                  </span> 
-                  {{ end }}
+                {{ if or ( .Params.bluesky ) ( .Params.mastodon ) (.Params.threads) }}
+                <span class="syndication">
+                  {{ if .Params.mastodon }}
+                  <a class="u-syndication icon fa-brands fa-mastodon" href="https://tech.lgbt/@Snuggle/{{ ( print .Params.mastodon.id ) | safeHTMLAttr }}" ></a>
+                  {{ end }} 
+                  {{ if .Params.bluesky }}
+                    <a class="u-syndication icon fa-brands fa-bluesky" {{ printf "href=%q" .Params.bluesky.link | safeHTMLAttr }} ></a>
+                  {{ end }}  
+                  {{ if .Params.threads }}
+                  <a class="u-syndication icon fa-brands fa-threads" {{ printf "href=%q" .Params.threads.link | safeHTMLAttr }} ></a>
+                  {{ end }} 
+                </span> 
+                {{ end }}
                 <br>
                 
                 </div>
