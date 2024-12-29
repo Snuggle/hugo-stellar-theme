@@ -526,3 +526,7 @@ ul.post-tags li {
 .h-card {
 	border-bottom: none;
 }
+
+img {
+	max-width: 100%;
+}
