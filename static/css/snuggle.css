@@ -527,3 +527,7 @@ ul.post-tags li {
 	border-top: solid lightgray 1px;
 	padding: 5px;
 }
+
+.h-card {
+	border-bottom: none;
+}
