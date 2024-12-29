@@ -101,26 +101,12 @@
                       <a class="u-syndication icon fa-brands fa-bluesky" {{ printf "href=%q" .Params.bluesky.link | safeHTMLAttr }} ></a>
                     {{ end }}  
                     {{ if .Params.mastodon }}
-                      <a class="u-syndication icon fa-brands fa-mastodon" {{ printf "href='https://tech.lgbt/@Snuggle/%q'" ( print .Params.mastodon.id ) | safeHTMLAttr }} ></a>
+                      <a class="u-syndication icon fa-brands fa-mastodon" {{ printf "href='https://tech.lgbt/@Snuggle/%q'" .Params.mastodon.id | safeHTMLAttr }} ></a>
                     {{ end }} 
                   {{ end }}
                 </span> 
                 <br>
-                <a href="/" class="u-url">
-                  {{ if .Params.author }}
-                  <img class="u-photo avatar" src="{{ .Params.author.avatar }}" style="width:96px; height:96px; vertical-align: middle;">
-                  <div style="display: inline;">
-                    <span class="p-name dark">By {{ .Params.author.name }}</span>
-                    <span><a href="https://micro.blog/{{ .Params.author.username }}">@{{ .Params.author.username }}</a></span>
-                  </div>
-                  {{ else }}
-                  <img class="u-photo avatar" src="{{ .Site.Author.avatar }}" style="width:30px; height:30px; vertical-align: middle;">
-                  <div style="display: inline;">
-                    <span class="p-name dark">By {{ .Site.Author.name }}</span>
-                    <span><a href="https://micro.blog/{{ .Site.Author.username }}">@{{ .Site.Author.username }}</a></span>
-                  </div>
-                {{ end }}
-                  </a>
+                
                 </div>
                 </a>
                 </div>
