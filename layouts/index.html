@@ -54,9 +54,11 @@
                 {{ .Content }}
                 </div>
                 {{ end }}
-                <h5>{{ .Date.Format "Jan 2, 2006" }}</h5>
-                </div>
+                <a href="{{ .Permalink }}" class="post-date u-url"><time class="dt-published" datetime="{{ .Date.Format "2006-01-02 15:04:05 -0700" }}">{{ .Date.Format "Jan 2, 2006" }}</time> ∞</a>                </div>
                 </a>
+                {{ if .Params.bluesky }}
+                <a class="u-syndication" {{ printf "href=%q" .Params.bluesky.url | safeHTMLAttr }} style="display: none;">Also on Bluesky</a>
+                {{ end }}
               </div>
 						{{ end }}
             {{ end }}
@@ -92,8 +94,7 @@
                 {{ .Content }}
                 </div>
                 {{ end }}
-                <h5>{{ .Date.Format "Jan 2, 2006" }}</h5>
-                </div>
+                <a href="{{ .Permalink }}" class="post-date u-url"><time class="dt-published" datetime="{{ .Date.Format "2006-01-02 15:04:05 -0700" }}">{{ .Date.Format "Jan 2, 2006" }}</time> ∞</a>                </div>
                 </a>
                 {{ if .Params.bluesky }}
                 <a class="u-syndication" {{ printf "href=%q" .Params.bluesky.url | safeHTMLAttr }} style="display: none;">Also on Bluesky</a>
