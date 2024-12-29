@@ -99,7 +99,7 @@
                 <a class="u-syndication" {{ printf "href=%q" .Params.bluesky.url | safeHTMLAttr }} style="display: none;">Also on Bluesky</a>
                 {{ end }}
                 {{ if .Params.mastodon }}
-                <a class="u-syndication" {{ printf "href=%q" .Params.mastodon.url | safeHTMLAttr }} style="display: none;">Also on Mastodon</a>
+                <a class="u-syndication" {{ printf "href=https://tech.lgbt/@Snuggle/%q" .Params.mastodon.id | safeHTMLAttr }} style="display: none;">Also on Mastodon</a>
                 {{ end }}
                 </div>
 						{{ end }}
