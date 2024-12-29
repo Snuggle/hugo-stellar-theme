@@ -4,6 +4,8 @@
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <meta name="description" content="{{ with .Site.Params.description }} {{ . }} {{ end }}">
 <meta name="author" content="{{ with .Site.Params.name }} {{ . }} {{ end }}">
+<link rel="authorization_endpoint" href="https://micro.blog/indieauth/auth" />
+<link rel="token_endpoint" href="https://micro.blog/indieauth/token" />
 {{ hugo.Generator }}
 {{ "<!-- [if lte IE 8 ]]> <script src=" | safeHTML }}"{{ .Site.BaseURL }}{{ "js/ie/html5shiv.js\"></script><![endif] -->" | safeHTML }}
 <link rel="stylesheet" href="{{ .Site.BaseURL }}css/main.css" />
