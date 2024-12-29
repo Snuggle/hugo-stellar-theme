@@ -101,7 +101,7 @@
                       <a class="u-syndication icon fa-brands fa-bluesky" {{ printf "href=%q" .Params.bluesky.link | safeHTMLAttr }} ></a>
                     {{ end }}  
                     {{ if .Params.mastodon }}
-                    <a class="u-syndication icon fa-brands fa-mastodon" {{ printf "href='https://tech.lgbt/@Snuggle/%q'" ( trim .Params.mastodon.id "\"" ) | safeHTMLAttr }} ></a>
+                    <a class="u-syndication icon fa-brands fa-mastodon" href="https://tech.lgbt/@Snuggle/( print .Params.mastodon.id )" | safeHTMLAttr }} ></a>
                     {{ end }} 
                   {{ end }}
                 </span> 
