@@ -97,10 +97,10 @@
                 <a href="{{ .Permalink }}" class="post-date u-url"><time class="dt-published" datetime="{{ .Date.Format "2006-01-02 15:04:05 -0700" }}">{{ .Date.Format "Jan 2, 2006" }}</time> ∞</a>               
                 <span class="syndication">Also posted to:
                 {{ if .Params.bluesky }}
-                <a class="u-syndication" {{ printf "href=%q" .Params.bluesky.link | safeHTMLAttr }} style="display: none;"><a {{ printf "href=%q" .Params.bluesky.link | safeHTMLAttr }} class="icon fa-brands fa-bluesky"></a></a>
+                <a class="u-syndication icon fa-brands fa-bluesky" {{ printf "href=%q" .Params.bluesky.link | safeHTMLAttr }} ></a>
                 {{ end }}  
                 {{ if .Params.mastodon }}
-                <a class="u-syndication" {{ printf "href=%q" .Params.mastodon.link | safeHTMLAttr }} style="display: none;"><a {{ printf "href=%q" .Params.mastodon.url | safeHTMLAttr }} class="icon fa-brands fa-mastodon"></a></a>
+                <a class="u-syndication icon fa-brands fa-mastodon" {{ printf "href=%q" .Params.mastodon.id | safeHTMLAttr }} ></a>
                 {{ end }} 
                 </span> 
                 <br>
