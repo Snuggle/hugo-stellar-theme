@@ -95,13 +95,15 @@
                 </div>
                 {{ end }}
                 <a href="{{ .Permalink }}" class="post-date u-url"><time class="dt-published" datetime="{{ .Date.Format "2006-01-02 15:04:05 -0700" }}">{{ .Date.Format "Jan 2, 2006" }}</time> ∞</a>               
-                <span class="syndication">Also posted to:
-                {{ if .Params.bluesky }}
-                <a class="u-syndication icon fa-brands fa-bluesky" {{ printf "href=%q" .Params.bluesky.link | safeHTMLAttr }} ></a>
-                {{ end }}  
-                {{ if .Params.mastodon }}
-                <a class="u-syndication icon fa-brands fa-mastodon" {{ printf "href=%q" ( print .Params.mastodon.hostname .Params.mastodon.username .Params.mastodon.id )}} ></a>
-                {{ end }} 
+                {{ if or ( .Params.bluesky ) ( .Params.mastodon ) }}
+                  <span class="syndication">Also posted to:
+                    {{ if .Params.bluesky }}
+                      <a class="u-syndication icon fa-brands fa-bluesky" {{ printf "href=%q" .Params.bluesky.link | safeHTMLAttr }} ></a>
+                    {{ end }}  
+                    {{ if .Params.mastodon }}
+                      <a class="u-syndication icon fa-brands fa-mastodon" {{ printf "href='https://tech.lgbt/@Snuggle/%q'" ( print .Params.mastodon.id ) | safeHTMLAttr }} ></a>
+                    {{ end }} 
+                  {{ end }}
                 </span> 
                 <br>
                 <a href="/" class="u-url">
