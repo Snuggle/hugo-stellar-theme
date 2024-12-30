@@ -80,7 +80,7 @@
 						{{ $poststoshow := where $posts "Params.categories" "intersect" (slice "blogs" "posts") }}
 						{{ $paginator := .Paginate $posts }}
 						{{ range $paginator.Pages }}
-              <div class="card grid-item">
+              <div class="h-entry card grid-item">
                 <a href="{{ .Permalink }}">
                   <div class="card-body">
                     <h2>{{ .Title }}</h2>
