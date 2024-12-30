@@ -551,4 +551,5 @@ img {
 .card .bluesky-embed {
 	margin-left: -10px;
 	width: max-content !important;
+	height: 520px;
 }
