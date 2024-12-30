@@ -549,16 +549,7 @@ img {
 }
 
 .card .bluesky-embed {
-	display: flex !important; 
-	width: 100%; 
-	height: 100%; 
-	flex-direction: column; 
-	overflow: hidden;
-}
-
-.bluesky-embed iframe {
-	flex-grow: 1; 
-	border: none; 
-	margin: 0; 
-	padding: 0;
+	margin-left: -10px;
+	width: max-content !important;
+	height: 520px;
 }
