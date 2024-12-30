@@ -550,6 +550,7 @@ img {
 
 .card .bluesky-embed {
 	margin-left: -10px;
-	width: max-content !important;
-	height: 520px;
+	width: max-content;
+	height: 200px;
+	overflow: scroll;
 }
