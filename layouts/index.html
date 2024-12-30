@@ -70,9 +70,6 @@
                 {{ end }}
                 </div>
                 </a>
-                {{ if .Params.bluesky }}
-                <a class="u-syndication" {{ printf "href=%q" .Params.bluesky.url | safeHTMLAttr }} style="display: none;">Also on Bluesky</a>
-                {{ end }}
               </div>
 						{{ end }}
             {{ end }}
