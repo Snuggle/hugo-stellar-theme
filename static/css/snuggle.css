@@ -543,3 +543,7 @@ img {
 .syndication {
 	float: right;
 }
+
+.post-content img {
+	height: fit-content;
+}
