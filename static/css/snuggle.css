@@ -538,7 +538,7 @@ img {
 }
 
 .post-content img {
-	height: fit-content;
+	height: auto;
 }
 
 .card .bluesky-embed {
