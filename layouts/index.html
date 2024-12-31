@@ -32,7 +32,9 @@
               <div class="h-entry card grid-item">
                 <a href="{{ .Permalink }}">
                   <div class="card-body">
+                    {{ if .Title }}
                     <h2>📌 {{ .Title }}</h2>
+                    {{ end }}
                     {{ if in .RawContent "<!--more-->" }}
                     <div class="p-summary">
                       {{ $splitContents := split .RawContent "<!--more-->" }}
@@ -67,7 +69,9 @@
               <div class="h-entry card grid-item">
                 <a href="{{ .Permalink }}">
                   <div class="card-body">
+                    {{ if .Title }}
                     <h2>{{ .Title }}</h2>
+                    {{ end }}
                     {{ with .Params.audio }}
                       <script type="text/javascript" src="https://micro.blog/narration.js?url={{ . }}"></script>
                     {{ end }}

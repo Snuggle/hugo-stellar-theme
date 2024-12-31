@@ -547,6 +547,10 @@ img {
 	overflow: scroll;
 }
 
+.card h2 {
+	margin-top: 1em;
+}
+
 .card-body p {
 	margin: 0;
 }
