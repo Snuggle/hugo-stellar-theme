@@ -4,8 +4,8 @@
 	{{ if .Params.mastodon.id }}
 	<a class="u-syndication icon fa-brands fa-mastodon" href="https://tech.lgbt/@Snuggle/{{ ( print .Params.mastodon.id ) | safeHTMLAttr }}" ></a>
 	{{ end }} 
-	{{ if .Params.bluesky.link }}
-	<a class="u-syndication icon fa-brands fa-bluesky" href="https://bsky.app/profile/snugg.ie/post/{{ ( print .Params.bluesky.id ) | safeHTMLAttr }}" ></a>
+	{{ if .Params.bluesky.url }}
+	<a class="u-syndication icon fa-brands fa-bluesky" href='https://bsky.app/profile/snugg.ie/post/{{ replaceRE "at://(.*)/(.*)/(.*)" "https://bsky.app/profile/snugg.ie/post/$3" .Params.bluesky.url }}' ></a>
 	{{ end }}  
 	{{ if .Params.threads.url }}
 	<a class="u-syndication icon fa-brands fa-threads" {{ printf "href=%q" .Params.threads.url | safeHTMLAttr }} ></a>
