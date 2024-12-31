@@ -1,13 +1,13 @@
 <a href="{{ .Permalink }}" class="post-date u-url"><time class="dt-published" datetime="{{ .Date.Format "2006-01-02 15:04:05 -0700" }}">{{ .Date.Format "Jan 2, 2006" }}</time> ∞</a>
 {{ if or ( .Params.bluesky ) ( .Params.mastodon ) (.Params.threads) }}
 <span class="syndication">
-	{{ if .Params.mastodon }}
+	{{ if .Params.mastodon.id }}
 	<a class="u-syndication icon fa-brands fa-mastodon" href="https://tech.lgbt/@Snuggle/{{ ( print .Params.mastodon.id ) | safeHTMLAttr }}" ></a>
 	{{ end }} 
-	{{ if .Params.bluesky }}
+	{{ if .Params.bluesky.link }}
 	<a class="u-syndication icon fa-brands fa-bluesky" {{ printf "href=%q" .Params.bluesky.link | safeHTMLAttr }} ></a>
 	{{ end }}  
-	{{ if .Params.threads }}
+	{{ if .Params.threads.url }}
 	<a class="u-syndication icon fa-brands fa-threads" {{ printf "href=%q" .Params.threads.url | safeHTMLAttr }} ></a>
 	{{ end }} 
 </span> 
