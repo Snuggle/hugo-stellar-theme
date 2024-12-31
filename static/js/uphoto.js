@@ -8,11 +8,7 @@ if (ims.length > 0) {
   // Note that I'm doing no real error handling, you might want to clean this up
   for (let i = 0; i < ims.length; i++) {
 
-    // For each image we get the parent element, in this case it will be <p>
-    let parentElm = ims[i].parentElement;
-
-    // Using the parent element and the image object we replace the innerHTML
-    // with our image with the class "glightbox" and a link to the image
-    parentElm.innerHTML = '<img src="' + ims[i].src + '" class="u-photo">'
+    // For each image we add the class name
+	ims[i].className += "u-photo";
   }
 }
