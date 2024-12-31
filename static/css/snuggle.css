@@ -431,7 +431,7 @@ html {
 	width: 100%;
 	height: 15rem;
 	object-fit: cover;
-	border-radius: 5px;
+	border-radius: 0px;
 }
 
 .card h2 {
@@ -452,10 +452,6 @@ html {
 	letter-spacing: 0.04em;
 	text-transform: uppercase;
 	text-align: left;
-}
-
-.card-body {
-	padding: 1.2em;
 }
 
 #main .card .card-body h2 {
@@ -510,10 +506,6 @@ ul.post-tags li {
   margin-bottom: 2em;
 }
 
-.card-body h2 {
-	margin-top: 5px;
-}
-
 #content p img {
 	max-width: 100%;
 }
@@ -553,4 +545,25 @@ img {
 	width: max-content !important;
 	height: 200px;
 	overflow: scroll;
+}
+
+.card-body p {
+	margin: 0;
+}
+
+.card-body .e-content {
+	padding-top: 0.5em;
+}
+
+
+.card-body .e-content p {
+	padding-left: 0.5em;
+}
+
+.card-body .e-content img {
+	max-width: inherit;
+}
+
+.card-body .post-date {
+	padding-left: 0.5em;
 }
