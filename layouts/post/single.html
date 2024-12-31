@@ -34,7 +34,7 @@
                   {{ if .Title }}
                   <h1 class="p-name">{{ .Title }}</h2>
                   {{ end }}
-                  {{ .Content }}
+                  {{ .Content | replaceRE "<img>" "<img class=\"u-photo\">" | safeHTML }}
                 </article>
                 <a rel="author" class="p-author h-card" style="display:none;" href="https://snugg.ie">Evie Snuggle</a>
               </div>
