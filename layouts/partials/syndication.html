@@ -5,7 +5,8 @@
 	<a class="u-syndication icon fa-brands fa-mastodon" href="https://tech.lgbt/@Snuggle/{{ ( print .Params.mastodon.id ) | safeHTMLAttr }}" ></a>
 	{{ end }} 
 	{{ if .Params.bluesky.link }}
-	<a class="u-syndication icon fa-brands fa-bluesky" {{ printf "href=%q" .Params.bluesky.link | safeHTMLAttr }} ></a>
+	{{ $bluesky_url = "" }}
+	<a class="u-syndication icon fa-brands fa-bluesky" href="https://bsky.app/profile/snugg.ie/post/{{ ( print .Params.bluesky.id ) | safeHTMLAttr }}" ></a>
 	{{ end }}  
 	{{ if .Params.threads.url }}
 	<a class="u-syndication icon fa-brands fa-threads" {{ printf "href=%q" .Params.threads.url | safeHTMLAttr }} ></a>

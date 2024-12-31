@@ -584,6 +584,7 @@ img {
 }
 
 #webmentions img { 
-	max-height: 1.2em; 
-	margin-right: -1ex;
+	max-height: 3em; 
+	margin-right: -3ex;
+	border-radius: 100%;
 }
