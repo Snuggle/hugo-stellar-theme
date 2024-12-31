@@ -1,10 +1,10 @@
-<section id="intro" class="main">
+<section id="intro" class="main h-card">
   <div class="spotlight">
     <div class="content">
       <header class="major">
-        <h2>{{ .Site.Params.intro.title }}</h2>
+        <h2 class="p-name">{{ .Site.Params.intro.title }}</h2>
       </header>
-      <p class="p-summary">{{ .Site.Params.intro.description | markdownify }}</p>
+      <p class="p-summary p-note">{{ .Site.Params.intro.description | markdownify }}</p>
       <ul class="actions">
         {{range $button := .Site.Params.intro.action }}
           <li>
@@ -16,5 +16,16 @@
     {{ if .Site.Params.intro.image }}
       <span class="image"><img class="u-photo" src="{{ .Site.Params.intro.image }}" alt="" /></span>
     {{ end }}
+    <div style="display: none;">
+      <a class="u-url" style="display: none;" href="https://snugg.ie"></a>
+      <span class="p-name">Evie Snuggle</span>
+      <span class="p-given-name">Evie</span>
+      <span class="p-family-name">Snuggle</span>
+      <span class="p-nickname">snuggle</span>
+      <a class="u-email" href="mailto:test@example.com"></a>
+      <div class="p-country-name">United Kingdom</div>
+      <div class="p-category">technology</div>
+      <img class="u-logo" src="/images/sprinkles/vector/sprinkles.svg"/>
+    </div>
   </div>
 </section>
