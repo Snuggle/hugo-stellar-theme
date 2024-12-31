@@ -534,6 +534,7 @@ img {
 
 .syndication {
 	float: right;
+	padding-right: 0.5em;
 }
 
 .post-content img {
@@ -548,7 +549,9 @@ img {
 }
 
 .card h2 {
-	margin-top: 1em;
+	margin-top: 0.5em;
+	margin-left: 0.5em;
+	margin-right: 0.5em;
 }
 
 .card-body p {
@@ -570,4 +573,8 @@ img {
 
 .card-body .post-date {
 	padding-left: 0.5em;
+}
+
+.card-body {
+	padding-bottom: 0.5em;
 }
