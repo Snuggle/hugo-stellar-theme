@@ -582,3 +582,8 @@ img {
 .card-body {
 	padding-bottom: 0.5em;
 }
+
+#webmentions img { 
+	max-height: 1.2em; 
+	margin-right: -1ex;
+}
