@@ -36,11 +36,12 @@
                   {{ end }}
                   {{ .Content }}
                 </article>
+                <a rel="author" class="p-author h-card" style="display:none;" href="https://snugg.ie">Evie Snuggle</a>
               </div>
               {{ if .Params.categories }}
   <ul class="post-tags">
     {{ range .Params.categories }} {{ $href := print (absURL "categories/") (urlize .) }}
-    <li><a href="{{ $href }}">#{{ . }}</a></li>
+    <li><a class="p-category" href="{{ $href }}">#{{ . }}</a></li>
     {{ end }}
   </ul>
   {{ partial "syndication.html" . }}
