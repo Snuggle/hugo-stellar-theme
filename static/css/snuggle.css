@@ -572,6 +572,11 @@ img {
 	border-radius: 5px;
 }
 
+
+.card-body .p-summary p img {
+	border-radius: 5px;
+}
+
 .p-summary p {
 	padding-left: 0.8em;
 	padding-right: 0.8em;
