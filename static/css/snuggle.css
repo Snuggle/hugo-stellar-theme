@@ -563,12 +563,18 @@ img {
 }
 
 
-.card-body .e-content p:nth-of-type(1) {
+.card-body .e-content p {
 	padding-left: 0.8em;
+	padding-right: 0.8em;
 }
 
-.p-summary p:nth-of-type(1) {
+.card-body .e-content p img {
+	border-radius: 5px;
+}
+
+.p-summary p {
 	padding-left: 0.8em;
+	padding-right: 0.8em;
 }
 
 .card-body .e-content img {
