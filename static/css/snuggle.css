@@ -578,8 +578,8 @@ img {
 }
 
 .p-summary a {
-	padding-left: 0.8em;
-	padding-right: 0.8em;
+	color: unset;
+	background-color: none;
 }
 
 .card-body .e-content img {

@@ -79,11 +79,13 @@
                     {{ end }}
                     {{ if in .RawContent "<!--more-->" }}
                     <div class="p-summary">
+                      <p>
                       {{ $splitContents := split .RawContent "<!--more-->" }}
                       {{ $summary := index $splitContents 0 }}
                       {{ $summary := replaceRE "\\[\\^.*?\\]" "" $summary }}
                       {{ $summary := replaceRE "\\n\\[\\^.*?\\]:.*" "" $summary }}
                       {{ $summary | markdownify }}
+                      </p>
                       <p>
                 <a class="read-more" href="{{ .Permalink }}">
                 {{ if templates.Exists "partials/microhook-read-more-text.html" }}
@@ -143,3 +145,4 @@
 		{{- partial "footer_custom.html" . }}
 	</body>
 </html>
+<p></p>
