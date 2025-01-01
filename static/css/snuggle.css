@@ -577,6 +577,11 @@ img {
 	padding-right: 0.8em;
 }
 
+.p-summary a {
+	padding-left: 0.8em;
+	padding-right: 0.8em;
+}
+
 .card-body .e-content img {
 	max-width: inherit;
 }
