@@ -39,6 +39,8 @@
 {{ "<!-- [if lte IE 8 ]]> <script src=" | safeHTML }}"{{ .Site.BaseURL }}{{ "js/ie/html5shiv.js\"></script><![endif] -->" | safeHTML }}
 <link rel="stylesheet" href="{{ .Site.BaseURL }}css/main.css" />
 <link rel="stylesheet" href="{{ .Site.BaseURL }}css/snuggle.css" />
+<link rel="stylesheet" href="{{ .Site.BaseURL }}custom.css" />
+
 {{ "<!--[if lte IE 8]><link rel=\"stylesheet\" href=" | safeHTML }}"{{ .Site.BaseURL }}{{ "css/ie8.css\" /><![endif]-->" | safeHTML }}
 {{ "<!--[if lte IE 8]><link rel=\"stylesheet\" href=" | safeHTML }}"{{ .Site.BaseURL }}{{ "css/ie9.css\" /><![endif]-->" | safeHTML }}
 <link rel="icon" href="/images/sprinkles/vector/sprinkles.svg" sizes="any" type="image/svg+xml">
