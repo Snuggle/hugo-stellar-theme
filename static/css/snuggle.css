@@ -609,25 +609,28 @@ img {
 #webmentions img { 
 	max-height: 3em; 
 	margin-right: -3ex;
+	margin-bottom: -0.5ex;
 	border-radius: 100%;
 }
 
 .source {
-	font-size: 150%;
+	font-size: 120%;
 	padding-left: 0.5em;
 }
 
-.webmentions li {
+.comments li {
 	list-style-type: none;
 	display: flex;
 	flex-wrap: wrap;
 	align-items: center;
 }
 
-.webmentions .text {
+.text {
 	display: block;
+	width: 100%;
 }
 
 .microblog  {
 	display: none;
 }
+
