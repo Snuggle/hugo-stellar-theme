@@ -25,7 +25,7 @@
 					<header class="major">
 						<h2>My Posts</h2>
 					</header>
-					<div class="grid" data-masonry='{ "itemSelector": ".grid-item", "isFitWidth": true, "gutter": 20 }'>
+					<div class="grid" data-masonry='{ "itemSelector": ".grid-item", "isFitWidth": true, "gutter": 10 }'>
             {{ $pinned := .Site.Taxonomies.categories.pinned }}
             {{ if $pinned }}
             {{ range last 3 $pinned }}

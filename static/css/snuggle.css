@@ -403,7 +403,6 @@ html {
 	flex: 1;
 	position: relative;
 	background: #fff;
-	min-width: 280px;
 	width: 32%;
 	border-radius: 0.6em;
 	overflow: hidden;
@@ -412,6 +411,13 @@ html {
 		0 8px 16px -8px hsla(0, 0%, 0%, 0.3), 0 -6px 16px -6px hsla(0, 0%, 0%, 0.03);
 	transition: all ease 200ms;
 }
+
+@media screen and (max-width: 570px) {
+	.card {
+		min-width: 100%;
+	}
+}
+
 
 .card-big {
 	flex-basis: 40%;
@@ -498,12 +504,13 @@ ul.post-tags li {
 
 .grid {
 	margin: 0 auto;
+	width: 100% !important;
 }
 
 .grid-item {
   float: left;
   /* vertical gutter */
-  margin-bottom: 2em;
+  margin-bottom: 1em;
 }
 
 #content p img {
