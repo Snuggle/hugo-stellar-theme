@@ -611,3 +611,23 @@ img {
 	margin-right: -3ex;
 	border-radius: 100%;
 }
+
+.source {
+	font-size: 150%;
+	padding-left: 0.5em;
+}
+
+.webmentions li {
+	list-style-type: none;
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+}
+
+.webmentions .text {
+	display: block;
+}
+
+.microblog  {
+	display: none;
+}
