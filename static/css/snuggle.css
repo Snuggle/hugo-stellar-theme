@@ -649,6 +649,7 @@ iframe {
 
 	#nav.alt {
 		width: 80%;
+		max-width: calc(100% - 2em);
 	}
 
 	#main {
