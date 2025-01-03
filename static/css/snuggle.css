@@ -634,3 +634,6 @@ img {
 	display: none;
 }
 
+iframe {
+   height: revert-layer;
+}
