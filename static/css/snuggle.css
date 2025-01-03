@@ -647,6 +647,10 @@ iframe {
 		width: 100%;
 	}
 
+	#nav.alt {
+		width: 80%;
+	}
+
 	#main {
 		border-radius: 0;
 	}
