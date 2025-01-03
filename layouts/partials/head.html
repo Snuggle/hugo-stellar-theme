@@ -29,7 +29,7 @@
 <meta name="og:description" content="{{ .Summary | truncate 60 }}">
 <meta name="description" content="{{ .Summary }}">
 {{ end }}
-{{ range .Params.photos }}
+{{ range .Params.images }}
 <meta name="twitter:image" content="{{ . }}">
 <meta property="og:image" content="{{ . }}">
 {{ end }}
