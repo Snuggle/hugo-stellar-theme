@@ -97,6 +97,10 @@ body.force-theme-dark {
 	color: white;
 }
 
+#main.force-theme-dark p a {
+	color: crimson;
+}
+
 #main.force-theme-dark .button.primary {
 	background-color: #a5125b !important;
 }

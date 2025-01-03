@@ -10,4 +10,6 @@ categories:
 - "Posts"
 ---
 
-Welcome to my longer blog post that has a title
+Welcome to my longer blog post that has a title with a link
+
+https://example.com
