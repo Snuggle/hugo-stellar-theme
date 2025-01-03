@@ -608,6 +608,7 @@ img {
 
 #webmentions img { 
 	max-height: 3em; 
+	max-width: 3em;
 	margin-right: -3ex;
 	margin-bottom: -0.5ex;
 	border-radius: 100%;
