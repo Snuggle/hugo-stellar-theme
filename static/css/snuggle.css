@@ -638,3 +638,16 @@ img {
 iframe {
    height: revert-layer;
 }
+
+@media screen and (max-width: 736px) {
+	#nav {
+		display: block;
+		position: relative;
+		max-width: 100%;
+		width: 100%;
+	}
+
+	#main {
+		border-radius: 0;
+	}
+}
