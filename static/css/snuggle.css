@@ -660,3 +660,7 @@ iframe {
 		border-radius: 0;
 	}
 }
+
+.reaction {
+	text-wrap: nowrap;
+}
