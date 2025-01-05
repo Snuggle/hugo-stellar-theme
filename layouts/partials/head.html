@@ -19,8 +19,8 @@
 {{ end }}
 {{ if .IsHome }}
 <meta name="twitter:card" content="summary">
-<meta name="twitter:description" content="{{ .Site.Params.itunes_description | truncate 125 }}">
-<meta name="og:description" content="{{ .Site.Params.itunes_description | truncate 60 }}">
+<meta name="twitter:description" content="{{ .Site.Params.itunes_description }}">
+<meta name="og:description" content="{{ .Site.Params.itunes_description }}">
 <meta name="description" content="{{ .Site.Params.itunes_description }}">
 <meta name="twitter:image" content="{{ .Site.BaseURL }}home-page-card.png">
 <meta property="og:image" content="{{ .Site.BaseURL }}home-page-card.png">
@@ -32,6 +32,10 @@
 {{ range .Params.images }}
 <meta name="twitter:image" content="{{ . }}">
 <meta property="og:image" content="{{ . }}">
+{{ end }}
+{{ if ( lt ( len .Params.images ) 1 ) }}
+<meta name="twitter:image" content="{{ .Site.BaseURL }}home-page-card.png">
+<meta property="og:image" content="{{ .Site.BaseURL }}home-page-card.png">
 {{ end }}
 <title>{{ block "title" . }}{{ if .IsHome }}{{ .Site.Title }}{{ else if .Title }}{{ .Title }} | {{ .Site.Title }}{{ else }}{{ delimit (split .Summary " " | first 5) " " }} … | {{ .Site.Title }}{{ end }}{{ end }}</title>
 <link rel="canonical" href="{{ .Permalink }}">
