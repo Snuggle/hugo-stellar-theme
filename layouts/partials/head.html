@@ -27,8 +27,8 @@
 <meta name="twitter:description" content="{{ .Site.Params.intro.description }}">
 <meta name="og:description" content="{{ .Site.Params.intro.description }}">
 <meta name="description" content="{{ .Site.Params.intro.description }}">
-<meta name="twitter:image" content="{{ .Site.BaseURL }}home-page-card.png">
-<meta property="og:image" content="{{ .Site.BaseURL }}home-page-card.png">
+<meta name="twitter:image" content="{{ .Site.BaseURL }}homepage-card.png">
+<meta property="og:image" content="{{ .Site.BaseURL }}homepage-card.png">
 {{ else }}
 <meta name="twitter:description" content="{{ .Summary | truncate 200 }}">
 <meta name="og:description" content="{{ .Summary | truncate 200 }}">
@@ -39,8 +39,8 @@
 <meta property="og:image" content="{{ . }}">
 {{ end }}
 {{ if not .Params.images }}
-<meta name="twitter:image" content="{{ .Site.BaseURL }}home-page-card.png">
-<meta property="og:image" content="{{ .Site.BaseURL }}home-page-card.png">
+<meta name="twitter:image" content="{{ .Site.BaseURL }}homepage-card.png">
+<meta property="og:image" content="{{ .Site.BaseURL }}homepage-card.png">
 {{ end }}
 <title>{{ block "title" . }}{{ if .IsHome }}{{ .Site.Title }}{{ else if .Title }}{{ .Title }} | {{ .Site.Title }}{{ else }}{{ delimit (split .Summary " " | first 5) " " }} … | {{ .Site.Title }}{{ end }}{{ end }}</title>
 <link rel="canonical" href="{{ .Permalink }}">
