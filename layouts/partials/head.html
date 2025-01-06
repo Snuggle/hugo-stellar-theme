@@ -33,9 +33,11 @@
 <meta name="twitter:image" content="{{ . }}">
 <meta property="og:image" content="{{ . }}">
 {{ end }}
+{{ if .Params.images }}
 {{ if ( lt ( len .Params.images ) 1 ) }}
 <meta name="twitter:image" content="{{ .Site.BaseURL }}home-page-card.png">
 <meta property="og:image" content="{{ .Site.BaseURL }}home-page-card.png">
+{{ end }}
 {{ end }}
 <title>{{ block "title" . }}{{ if .IsHome }}{{ .Site.Title }}{{ else if .Title }}{{ .Title }} | {{ .Site.Title }}{{ else }}{{ delimit (split .Summary " " | first 5) " " }} … | {{ .Site.Title }}{{ end }}{{ end }}</title>
 <link rel="canonical" href="{{ .Permalink }}">
