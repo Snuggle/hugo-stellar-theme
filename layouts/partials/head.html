@@ -2,11 +2,16 @@
 <meta charset="utf-8" />
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1" />
-<meta name="description" content="{{ with .Site.Params.description }} {{ . }} {{ end }}">
+<meta name="description" content="{{ with .Site.Params.intro.description }} {{ . }} {{ end }}">
 <meta name="author" content="{{ with .Site.Params.name }} {{ . }} {{ end }}">
 <link rel="authorization_endpoint" href="https://micro.blog/indieauth/auth" />
 <link rel="token_endpoint" href="https://micro.blog/indieauth/token" />
 <link rel="webmention" href="https://webmention.io/snugg.ie/webmention" />
+<meta property="og:locale" content="en_GB" />
+<meta property="og:locale:alternate" content="en_US" />
+<meta property="og:type" content="website" />
+<meta property="og:logo" content="/images/sprinkles/vector/sprinkles.svg" />
+        
 
 <meta name="fediverse:creator" content="@Snuggle@tech.lgbt">
 <meta name="twitter:card" content="summary_large_image">
@@ -33,11 +38,9 @@
 <meta name="twitter:image" content="{{ . }}">
 <meta property="og:image" content="{{ . }}">
 {{ end }}
-{{ if .Params.images }}
-{{ if ( lt ( len .Params.images ) 1 ) }}
+{{ if not .Params.images }}
 <meta name="twitter:image" content="{{ .Site.BaseURL }}home-page-card.png">
 <meta property="og:image" content="{{ .Site.BaseURL }}home-page-card.png">
-{{ end }}
 {{ end }}
 <title>{{ block "title" . }}{{ if .IsHome }}{{ .Site.Title }}{{ else if .Title }}{{ .Title }} | {{ .Site.Title }}{{ else }}{{ delimit (split .Summary " " | first 5) " " }} … | {{ .Site.Title }}{{ end }}{{ end }}</title>
 <link rel="canonical" href="{{ .Permalink }}">
