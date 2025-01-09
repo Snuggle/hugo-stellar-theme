@@ -616,6 +616,8 @@ img {
 	margin-right: -3ex;
 	margin-bottom: -0.5ex;
 	border-radius: 100%;
+	outline: white solid 2px;
+	margin-left: -1em;
 }
 
 .source {
@@ -664,3 +666,16 @@ iframe {
 .reaction {
 	text-wrap: nowrap;
 }
+
+
+/* https://seia.js.org/ */
+#webmentions img:hover {
+	outline: #640032 solid 2px;
+	transition-duration: 150ms;
+	transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+	transition-property: color, background-color, border-color, outline-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter;
+	z-index: 1;
+	position: relative;
+}
+
+/* TODO: Tomorrow, implement reverse z-index order on reactions so that they look like Seia */
