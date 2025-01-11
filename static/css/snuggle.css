@@ -280,7 +280,7 @@ p a {
 	background-color: inherit;
 }
 
-#footer a {
+.copyright a {
 	color: rgba(255,255,255,0.65);
 	background-color: inherit;
 }
