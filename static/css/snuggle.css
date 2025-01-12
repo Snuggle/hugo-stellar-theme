@@ -685,10 +685,3 @@ iframe {
 .reaction {
 	pointer-events: none;
 }
-
-.reacts {
-	display: flex;
-	flex-direction: row-reverse;
-	justify-content: flex-end;
-	flex-wrap: wrap;
-}
