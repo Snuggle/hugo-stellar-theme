@@ -58,3 +58,67 @@
 {{ if templates.Exists "microblog_head.html" }}
     {{ partial "microblog_head.html" . }}
 {{ end }}
+<style>
+#wrapper {
+	width: 64em;
+	max-width: calc(100% - 4em);
+	margin: 0 auto;
+}
+body {
+	background-color: #640032;
+}
+.logo {
+    opacity: 0;
+}
+
+#main {
+	background-color: #ffffff;
+	color: #636363;
+	border-radius: 0.25em;
+}
+#nav {
+	background-color: #ffffff;
+	color: #636363;
+	position: absolute;
+	width: 64em;
+	max-width: calc(100%);
+	background-color: #f7f7f7;
+	border-top-left-radius: 0.25em;
+	border-top-right-radius: 0.25em;
+	cursor: default;
+	text-align: center;
+}
+.toggle-theme-dark {
+	position: absolute;
+	right: 1%;
+	top: 1%;
+	min-width: 4.5em;
+	font-size: 100%;
+}
+.toggle-theme-light {
+	display: none;
+	position: absolute;
+	right: 1%;
+	top: 1%;
+	min-width: 4.5em;
+	font-size: 100%;
+}
+#header.alt {
+	padding: 2.5em 5em 1em 5em;
+}
+#nav ul li {
+	-moz-transition: margin 0.2s ease;
+	-webkit-transition: margin 0.2s ease;
+	-ms-transition: margin 0.2s ease;
+	transition: margin 0.2s ease;
+	display: inline-block;
+	margin: 0 0.35em;
+	padding: 0;
+	vertical-align: middle;
+}
+a {
+	text-decoration: none;
+	/* border-bottom: dotted 1px; */
+	color: inherit;
+}
+</style>
