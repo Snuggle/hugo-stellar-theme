@@ -97,7 +97,7 @@
                 </div>
                 {{ else }}
                 <div class="e-content">
-                  {{ .Content | replaceRE "<img" "<img loading=\"lazy\"" }}
+                  {{ .Content | replaceRE "<img" "<img loading=\"lazy\"" | safeHTML }}
                 </div>
                 {{ end }}
                 {{ partial "syndication.html" . }}
