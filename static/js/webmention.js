@@ -321,7 +321,7 @@ A more detailed example:
 		  
 		  let source = entities(c.url.split('/')[2]);
 		  if (source == "micro.blog") {
-			source = "@" + entities(c.url.split('/')[3]) + " at " + entities(c.url.split('/')[2]);
+			source = "@" + entities(c.url.split('/')[3])
 		  }
 		  if (c.author && c.author.name) {
 			source = entities(c.author.name);

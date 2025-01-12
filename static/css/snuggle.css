@@ -685,3 +685,7 @@ iframe {
 .reaction {
 	pointer-events: none;
 }
+
+.microblog_post {
+	display: none;
+}
