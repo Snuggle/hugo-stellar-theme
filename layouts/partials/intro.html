@@ -14,7 +14,7 @@
       </ul>
     </div>
     {{ if .Site.Params.intro.image }}
-      <span class="image"><img class="u-photo" src="{{ .Site.Params.intro.image }}" alt="" /></span>
+      <span class="image"><img class="u-photo" rel="preload" src="{{ .Site.Params.intro.image }}" alt="" /></span>
     {{ end }}
     <div style="display: none;">
       <a class="u-url" style="display: none;" href="https://snugg.ie"></a>
@@ -25,7 +25,7 @@
       <a class="u-email" href="mailto:test@example.com"></a>
       <div class="p-country-name">United Kingdom</div>
       <div class="p-category">technology</div>
-      <img class="u-logo" src="/images/sprinkles/vector/sprinkles.svg"/>
+      <img class="u-logo" alt="An abstract logo which shows three sprinkles, like the sprinkles on a cake." src="/images/sprinkles/vector/sprinkles.svg"/>
     </div>
   </div>
 </section>
