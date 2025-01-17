@@ -79,14 +79,28 @@ body {
 #nav {
 	background-color: #ffffff;
 	color: #636363;
-	position: absolute;
 	width: 64em;
+	position: absolute;
 	max-width: calc(100% - 4em);
 	background-color: #f7f7f7;
 	border-top-left-radius: 0.25em;
 	border-top-right-radius: 0.25em;
 	cursor: default;
 	text-align: center;
+}
+
+@media screen and (max-width: 736px) {
+	#nav {
+		display: block;
+		position: relative;
+		max-width: 100%;
+		width: 100%;
+		margin-bottom: -1.3em;
+	}
+
+	#main {
+		border-radius: 0;
+	}
 }
 .toggle-theme-dark {
 	position: absolute;
@@ -120,10 +134,5 @@ a {
 	text-decoration: none;
 	/* border-bottom: dotted 1px; */
 	color: inherit;
-}
-#nav {
-	display: block;
-	max-width: calc(100% - 4em);
-	width: calc(100% - 4em);
 }
 </style>
