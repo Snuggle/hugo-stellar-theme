@@ -689,3 +689,9 @@ iframe {
 .microblog_post {
 	display: none;
 }
+
+.photos-grid-item {
+	border-radius: 5px;
+	height: 300px;
+	width: 300px;
+}
