@@ -38,10 +38,10 @@
 <meta name="twitter:image" content="{{ . }}">
 <meta property="og:image" content="{{ . }}">
 {{ end }}
-{{ if not .Params.images }}
+<!--{{ if not .Params.images }}
 <meta name="twitter:image" content="{{ .Site.BaseURL }}homepage-card.png">
 <meta property="og:image" content="{{ .Site.BaseURL }}homepage-card.png">
-{{ end }}
+{{ end }}-->
 <title>{{ block "title" . }}{{ if .IsHome }}{{ .Site.Title }}{{ else if .Title }}{{ .Title }} | {{ .Site.Title }}{{ else }}{{ delimit (split .Summary " " | first 5) " " }} … | {{ .Site.Title }}{{ end }}{{ end }}</title>
 <link rel="canonical" href="{{ .Permalink }}">
   
