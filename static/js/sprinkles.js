@@ -36,7 +36,7 @@ function getSeason(d) {
 	// Do silly seasons here
 	if (mon == 2) {
 		if (day >= 0 && day <= 10) {
-			changeLogo("/images/sprinkles/vector/sprinkles-me.svg");
+			changeLogo("/images/sprinkles/vector/sprinkles.svg");
 			return 'It is close to my birthday!';
 		}
 	}
