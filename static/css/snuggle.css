@@ -527,7 +527,7 @@ ul.post-tags li {
 .grid-item {
   float: left;
   /* vertical gutter */
-  margin-bottom: 1em;
+  margin-bottom: 20px;
 }
 
 #content p img {
