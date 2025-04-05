@@ -40,12 +40,12 @@ function getSeason(d) {
 			return 'It is close to my birthday!';
 		}
 	}
-	if (mon == 4) {
-		if (day >= 0 && day <= 10) {
-			changeLogo("/images/sprinkles/vector/sprinkles-easter.svg");
-			return 'It is easter season!';
-		}
-	}
+	//if (mon == 4) {
+	//	if (day >= 0 && day <= 10) {
+	//		changeLogo("/images/sprinkles/vector/sprinkles-easter.svg");
+	//		return 'It is easter season!';
+	//	}
+	//}
 	if (mon == 10) {
 		if (day == 31) {
 			changeLogo("/images/sprinkles/vector/sprinkles-halloween-ghost.svg");
