@@ -1,7 +1,9 @@
 <nav id="nav">
-  <div style="display: inline-flex; vertical-align: middle;">
-    <span class="logo" style="transition: opacity 1.25s ease, transform 0.5s ease;"><img id="main-logo"  height="80" width="80" alt="An abstract logo which shows three sprinkles, like the sprinkles on a cake." src="/images/sprinkles/vector/sprinkles.svg"/></span>
-    <h2 class="p-name nav-heading">Evie Snuggle</h2>
+  <div style="display: inline-flex; align-items: center; vertical-align: middle; gap: calc(0.25rem * 4);">
+    <span class="logo" style="transition: opacity 1.25s ease, transform 0.5s ease;"><img id="main-logo" alt="An abstract logo which shows three sprinkles, like the sprinkles on a cake." src="/images/sprinkles/vector/sprinkles.svg"/></span>
+    <div>
+    <h2 class="p-name nav-heading">{{ .Site.Params.intro.title }}</h2>
+    </div>
   </div>
 
   {{ partial "theme-switch.html" . }}

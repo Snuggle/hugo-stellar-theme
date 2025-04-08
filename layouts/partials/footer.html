@@ -1,9 +1,11 @@
 <footer id="footer">
   <section>
+    <div>
     <h2> <img width="30px" id="footer-logo" alt="An abstract logo which shows three sprinkles, like the sprinkles on a cake." src="/images/sprinkles/vector/sprinkles.svg">       	
       {{ partial "breadcrumbs.html" . }}
     </h2>
-    <p>Evie's small personal website for hosting my own projects and centralizing all of my internet-related stuff within one place.
+    
+    <p>Hey! My name is Evie, but online I go by @​snuggle. I work in tech as a site reliability engineer (SRE), always herding computers around with code! 🐄👩🏽‍💻
       {{ if .Site.Params.footer.social_list.enable }}
       <ul class="icons">
           <li><a href="https://snuggle.link/mastodon" class="icon alt fa-brands fa-mastodon" rel="me"><span class="label">@snuggle@tech.lgbt Mastodon</span></a></li>
@@ -12,6 +14,21 @@
           <li><a href="https://snuggle.link/github" class="icon alt fa-brands fa-github" rel="me"><span class="label">@snuggle GitHub</span></a></li> 
       </ul>
     {{ end }}
+    <section id="intro" class="main h-card">
+      <div class="spotlight">
+        <div style="display: none;">
+          <a class="u-url" style="display: none;" href="https://snugg.ie"></a>
+          <span class="p-name">Evie Snuggle</span>
+          <span class="p-given-name">Evie</span>
+          <span class="p-family-name">Snuggle</span>
+          <span class="p-nickname">snuggle</span>
+          <a class="u-email" href="mailto:test@example.com"></a>
+          <div class="p-country-name">United Kingdom</div>
+          <div class="p-category">technology</div>
+          <img class="u-logo" alt="An abstract logo which shows three sprinkles, like the sprinkles on a cake." src="/images/sprinkles/vector/sprinkles.svg"/>
+        </div>
+      </div>
+    </section>
 
   </section>
 

@@ -2,16 +2,16 @@
   <div class="spotlight">
     <div class="content">
       <header class="major">
-        <h2 class="p-name">{{ .Site.Params.intro.title }}</h2>
+        <h2 class="p-name">Hey there! Welcome to my blog.</h2>
       </header>
       <p class="p-summary p-note">{{ .Site.Params.intro.description | markdownify }}</p>
-      <ul class="actions">
+      <!--<ul class="actions">
         {{range $button := .Site.Params.intro.action }}
           <li>
             <a href="{{ $button.href }}" class="button {{ $button.customClass }}">{{ $button.buttontext }}</a>
           </li>
         {{ end }}
-      </ul>
+      </ul>-->
     </div>
     {{ if .Site.Params.intro.image }}
       <span class="image"><picture>  <source srcset="/avatar.webp" type="image/webp"><source srcset="/avatar.jpg" type="image/jpeg"><img class="u-photo" rel="preload" src="{{ .Site.Params.intro.image }}" alt="Evie Snuggle's portrait with a garden behind" /></picture></span>

@@ -398,7 +398,7 @@ html {
 #main-logo {
 	display: block;
 	/*margin: 0 auto 1rem auto;*/
-	height: 40px;
+	height: calc(0.25rem * 10);
 }
 
 .cards {
@@ -718,5 +718,6 @@ iframe {
 }
 
 .nav-heading {
+	/*font-size: 1.125rem;*/
 	margin: 0;
 }

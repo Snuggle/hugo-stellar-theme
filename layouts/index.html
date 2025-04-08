@@ -22,9 +22,9 @@
 				{{ partial "intro.html" . }}
 				<!-- section features -->
 				<section id="posts" class="main special">
-					<header class="major">
+					<!--<header class="major">
 						<h2>My Posts</h2>
-					</header>
+					</header>-->
 					<div class="grid" data-masonry='{ "itemSelector": ".grid-item", "isFitWidth": true, "gutter": 10 }'>
             {{ $pinned := .Site.Taxonomies.categories.pinned }}
             {{ if $pinned }}
@@ -122,7 +122,7 @@
             {{ end }}
         </div>
 				</section>
-				<section id="where" class="main special">
+				<!--<section id="where" class="main special">
 					<header class="major">
 						<h2>Where can I find you?</h2>
 						<p>Huh, you would like to talk to me? Sure!<br>
@@ -134,7 +134,7 @@
 							<li><a href="contact" class="button primary">Contact me!</a></li>
 						</ul>
 					</footer>
-				</section>
+				</section>-->
 			</div>
 			<!-- Footer -->
 			{{ partial "footer.html" . }}
