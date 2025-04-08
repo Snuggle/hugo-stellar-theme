@@ -389,8 +389,8 @@ html {
 
 #main-logo {
 	display: block;
-	margin: 0 auto 1rem auto;
-	height: 5rem;
+	/*margin: 0 auto 1rem auto;*/
+	height: 40px;
 }
 
 .cards {
@@ -527,7 +527,7 @@ ul.post-tags li {
 .grid-item {
   float: left;
   /* vertical gutter */
-  margin-bottom: 20px;
+  margin-bottom: 500%;
 }
 
 #content p img {
@@ -553,7 +553,7 @@ img {
 }
 
 #header.alt {
-	padding: 2.5em 5em 1em 5em;
+	padding: 1.5em 0em 0em 0em;
 }
 
 .syndication {
