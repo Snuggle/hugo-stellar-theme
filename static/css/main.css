@@ -3246,7 +3246,7 @@
 		border-top-left-radius: 0.25em;
 		border-top-right-radius: 0.25em;
 		cursor: default;
-		text-align: center;
+		display: inline-flex;
 	}
 
 		#nav input, #nav select, #nav textarea {
@@ -3398,7 +3398,6 @@
 		#main input[type="button"],
 		#main button,
 		#main .button {
-			background-color: transparent;
 			box-shadow: inset 0 0 0 1px #dddddd;
 			color: #636363 !important;
 		}

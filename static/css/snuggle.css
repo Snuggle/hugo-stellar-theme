@@ -93,6 +93,10 @@ body.force-theme-dark {
 	color: LavenderBlush;
 }
 
+#nav.force-theme-dark h2 {
+	color: LavenderBlush;
+}
+
 #main.force-theme-dark a:hover {
 	color: white;
 }
@@ -145,7 +149,6 @@ body.force-theme-dark {
 
 .toggle-theme-light {
   display: none;
-  position: absolute;
   right: 1%;
   top: 1%;
   min-width: 4.5em;
@@ -153,11 +156,15 @@ body.force-theme-dark {
 }
 
 .toggle-theme-dark {
-  position: absolute;
   right: 1%;
   top: 1%;
   min-width: 4.5em;
   font-size: 100%;
+}
+
+#nav {
+	justify-content: space-between;
+	align-items: center;
 }
 
 @media screen and (min-width: 1700px) {
@@ -183,6 +190,7 @@ body.force-theme-light .toggle-theme-light {
 
 body.force-theme-light .toggle-theme-dark {
   display: inline-block !important;
+  background-color: revert-layer;
 }
 
 
@@ -527,7 +535,7 @@ ul.post-tags li {
 .grid-item {
   float: left;
   /* vertical gutter */
-  margin-bottom: 500%;
+  margin-bottom: 20px;
 }
 
 #content p img {
@@ -707,4 +715,8 @@ iframe {
 	border-radius: 5px;
 	height: 300px;
 	width: 300px;
+}
+
+.nav-heading {
+	margin: 0;
 }

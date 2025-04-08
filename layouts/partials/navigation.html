@@ -1,7 +1,8 @@
 <nav id="nav">
-  <ul>
-    {{ range $nav := .Site.Params.navigation }}
-      <li><a href="{{ $nav.href }}">{{ $nav.name | markdownify}}</a></li>
-    {{ end }}
-  </ul>
+  <div style="display: inline-flex;">
+    <span class="logo" style="transition: opacity 1.25s ease, transform 0.5s ease;"><img id="main-logo"  height="80" width="80" alt="An abstract logo which shows three sprinkles, like the sprinkles on a cake." src="/images/sprinkles/vector/sprinkles.svg"/></span>
+    <h2 class="p-name nav-heading">Evie Snuggle</h2>
+  </div>
+
+  {{ partial "theme-switch.html" . }}
 </nav>
