@@ -735,3 +735,12 @@ iframe {
 	/*font-size: 1.125rem;*/
 	margin: 0;
 }
+
+#breadcrumbs {
+	vertical-align: middle;
+}
+
+#nav ul {
+	display: inline-flex;
+	align-items: center;
+}
