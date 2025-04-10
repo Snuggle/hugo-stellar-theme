@@ -2,10 +2,10 @@
   <section>
     <div>
     <h2> <img width="30px" id="footer-logo" alt="An abstract logo which shows three sprinkles, like the sprinkles on a cake." src="/images/sprinkles/vector/sprinkles.svg">       	
-      {{ partial "breadcrumbs.html" . }}
+      {{ partial "footer_breadcrumbs.html" . }}
     </h2>
     
-    <p>Hey! My name is Evie, but online I go by @​snuggle. I work in tech as a site reliability engineer (SRE), always herding computers around with code! 🐄👩🏽‍💻
+    <p>You've reached the bottom! Here's where you can find me around on the internet:
       {{ if .Site.Params.footer.social_list.enable }}
       <ul class="icons">
           <li><a href="https://snuggle.link/mastodon" class="icon alt fa-brands fa-mastodon" rel="me"><span class="label">@snuggle@tech.lgbt Mastodon</span></a></li>
@@ -33,6 +33,11 @@
   </section>
 
   <section>
+    <h2 style="opacity: 0;"> <img width="30px" height="30px">       	
+      <ul id="breadcrumbs">
+        <li></li>
+    </ul>
+    </h2>
     <p>Subscribe to my newsletter!</p>
     <form method="POST" action="https://micro.blog/users/subscribe/193272">
       <input style="max-width: 18em;" type="text" name="email" placeholder="Your email address"> 
