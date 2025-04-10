@@ -677,11 +677,25 @@ iframe {
 
 	#nav.alt {
 		width: 100%;
-		/*max-width: calc(100% - 2em);*/
+		max-width: calc(100% - 2em);
 	}
 
 	#main {
 		border-radius: 0;
+	}
+}
+
+@media screen and (max-width: 360px) {
+	/* Custom bugfix: navbar too small */
+	#nav.alt {
+		max-width: 100%;
+	}
+}
+
+@media screen and (min-width: 480px) and (max-width: 736px) {
+	/* Custom bugfix: navbar too big */
+	#nav.alt {
+		max-width: calc(100% - 4em);
 	}
 }
 
