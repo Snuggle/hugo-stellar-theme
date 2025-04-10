@@ -736,6 +736,16 @@ iframe {
 	margin: 0;
 }
 
+#hidden-items {
+	display: contents;
+}
+
+@media screen and (max-width: 736px) {
+	#hidden-items {
+		display: none;
+	}
+}
+
 #breadcrumbs {
 	vertical-align: middle;
 }
