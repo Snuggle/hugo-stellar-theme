@@ -11,6 +11,8 @@
 	<body>
 		<!-- Wrapper -->
 		<div id="wrapper" class="h-feed">
+			{{ partial "navigation.html" . }}
+
 			{{ .Data.Posts }}
 			<!-- Header -->
 			{{ partial "header.html" . }}
