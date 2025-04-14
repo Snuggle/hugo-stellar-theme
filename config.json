@@ -248,8 +248,8 @@
           "title": "Evie Snuggle",
           "action": [
               {
-                  "buttontext": "Send me a message!",
-                  "href": "/#where"
+                  "buttontext": "View my projects!",
+                  "href": "/projects"
               }
           ]
       }
