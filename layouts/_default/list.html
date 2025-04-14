@@ -1,9 +1,4 @@
 {{ define "main" }}
-<div id="wrapper">
-	<nav id="nav">
-		{{ partial "breadcrumbs.html" . }}
-	  </nav>
-<div id="main">
 <section class="main">
 {{ if templates.Exists "partials/microhook-archive-post-list.html" }}
 {{ partial "microhook-archive-post-list.html" . }}
@@ -75,6 +70,4 @@
 {{ end }}
 {{ end }}
 </section>
-</div>
-</div>
 {{ end }}

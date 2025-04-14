@@ -1,13 +1,15 @@
 {
   "title": "snugg.ie",
-  "author": {
-      "name": "Snuggle",
-      "avatar": "https://micro.blog/snuggle/avatar.jpg",
-      "username": "snuggle",
-      "activitypub": {
-          "username": "snuggle",
-          "url": "[ACTIVITYPUB_ACTOR]"
-      }
+  "params": {
+	  "author": {
+	      "name": "Snuggle",
+	      "avatar": "https://micro.blog/snuggle/avatar.jpg",
+	      "username": "snuggle",
+	      "activitypub": {
+	          "username": "snuggle",
+	          "url": "[ACTIVITYPUB_ACTOR]"
+	      }
+	  }
   },
   "baseURL": "https://snugg.ie/",
   "mediaTypes": {
@@ -16,74 +18,6 @@
               "json"
           ]
       }
-  },
-  "outputFormats": {
-      "RSS": {
-          "baseName": "feed"
-      },
-      "JSON": {
-          "baseName": "feed"
-      },
-      "RSD": {
-          "mediaType": "application/xml",
-          "baseName": "rsd",
-          "isPlainText": true,
-          "notAlternative": true
-      },
-      "ArchiveJSON": {
-          "mediaType": "application/json",
-          "path": "archive",
-          "baseName": "index",
-          "isPlainText": true,
-          "notAlternative": true
-      },
-      "PhotosJSON": {
-          "mediaType": "application/json",
-          "path": "photos",
-          "baseName": "index",
-          "isPlainText": true,
-          "notAlternative": true
-      },
-      "PodcastXML": {
-          "mediaType": "application/rss+xml",
-          "baseName": "podcast",
-          "isPlainText": true,
-          "notAlternative": true
-      },
-      "PodcastJSON": {
-          "mediaType": "application/json",
-          "baseName": "podcast",
-          "isPlainText": true,
-          "notAlternative": true
-      }
-  },
-  "outputs": {
-      "home": [
-          "HTML",
-          "RSS",
-          "JSON",
-          "RSD",
-          "ArchiveJSON",
-          "PhotosJSON",
-          "PodcastXML",
-          "PodcastJSON"
-      ],
-      "page": [
-          "HTML"
-      ],
-      "section": [
-          "HTML"
-      ],
-      "taxonomy": [
-          "HTML",
-          "RSS",
-          "JSON"
-      ],
-      "term": [
-          "HTML",
-          "RSS",
-          "JSON"
-      ]
   },
   "taxonomies": {
       "category": "categories"
