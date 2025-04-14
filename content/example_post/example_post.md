@@ -8,7 +8,6 @@ lastmod: 2000-01-01T23:03:38-0000
 type: post
 categories:
 - "posts"
-- "projects"
 ---
 
 Welcome to my longer blog post that has a title with a link
