@@ -1,16 +1,5 @@
 {
   "title": "snugg.ie",
-  "params": {
-	  "author": {
-	      "name": "Snuggle",
-	      "avatar": "https://micro.blog/snuggle/avatar.jpg",
-	      "username": "snuggle",
-	      "activitypub": {
-	          "username": "snuggle",
-	          "url": "[ACTIVITYPUB_ACTOR]"
-	      }
-	  }
-  },
   "baseURL": "https://snugg.ie/",
   "mediaTypes": {
       "application/json": {
@@ -39,6 +28,15 @@
   "paginate": 20,
   "pluralizeListTitles": false,
   "params": {
+    "author": {
+	      "name": "Snuggle",
+	      "avatar": "https://micro.blog/snuggle/avatar.jpg",
+	      "username": "snuggle",
+	      "activitypub": {
+	          "username": "snuggle",
+	          "url": "[ACTIVITYPUB_ACTOR]"
+	      }
+	  },
       "description": "Follow <a href=\"https://snugg.ie\">@snuggle on snugg.ie</a>.",
       "itunes_description": "Hey! My name is Evie, but online I go by @​snuggle. I work in tech as a site reliability engineer (SRE), always herding computers around with code! 🐄👩🏽‍💻",
       "itunes_category": "Society & Culture",
