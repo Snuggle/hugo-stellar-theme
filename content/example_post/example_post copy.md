@@ -10,4 +10,4 @@ categories:
 - "posts"
 ---
 
-Wandering around Primark looking for Greggs sausage socks but there are none to be found!
+Lorem ipsum
