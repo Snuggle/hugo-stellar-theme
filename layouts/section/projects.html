@@ -51,8 +51,9 @@
               </div>
 						{{ end }}
             {{ end }}
-						{{ $posts := where .Site.Pages "Type" "post" }}
-						{{ range $posts }}
+            {{ $posts := where .Site.Pages "Type" "post" }}
+						{{ $poststoshow := where $posts "Params.categories" "intersect" (slice "projects") }}
+						{{ range $poststoshow }}
               <div class="h-entry card grid-item">
                 <a href="{{ .Permalink }}">
                   <div class="card-body">
