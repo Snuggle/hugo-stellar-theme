@@ -52,7 +52,7 @@
 						{{ end }}
             {{ end }}
 						{{ $posts := where .Site.Pages "Type" "post" }}
-						{{ range $paginator.posts }}
+						{{ range $posts }}
               <div class="h-entry card grid-item">
                 <a href="{{ .Permalink }}">
                   <div class="card-body">
