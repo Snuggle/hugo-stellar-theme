@@ -1,15 +1,20 @@
 <ul id="breadcrumbs">
     {{- range .Ancestors.Reverse }}
         {{ if strings.Contains .Title "snugg.ie" }}
-            {{ partial "logo.html" . }}<li></li>
+            <li><a id="breadcrumb-special" href="{{ .RelPermalink }}">{{ partial "logo.html" . }}</a></li>
         {{ else }}
         <div id="hidden-items"> /
         <li><a href="{{ .RelPermalink }}">{{ .Title }}</a></li> / 
+        </div>
         {{ end }}
     {{- end }}
     {{ if .Title }}
+    <div id="hidden-items"> /
     <li><a href="{{ .RelPermalink }}">{{ .Title }}</a></li>
+    </div>
     {{ else }}
+    <div id="hidden-items"> /
     <li><a href="{{ .RelPermalink }}">{{ .Summary | safeHTML | truncate 30 }}</a></li>
+    </div>
     {{ end }}
 </ul>

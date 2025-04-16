@@ -1,6 +1,8 @@
 <nav id="nav">
   {{ if .IsHome }}
-    {{ partial "logo.html" . }}
+  <ul id="breadcrumbs">
+            <li><a id="breadcrumb-special" href="{{ .RelPermalink }}">{{ partial "logo.html" . }}</a></li>
+            </ul>
   {{ else }}
     {{ partial "breadcrumbs.html" . }}
   {{ end }}

@@ -733,7 +733,7 @@ iframe {
 
 .nav-heading {
 	/*font-size: 1.125rem;*/
-	margin: 0;
+	margin: 0 0 0.5em 0;
 }
 
 #hidden-items {
@@ -759,4 +759,22 @@ iframe {
 video {
 	width: 100%;
 	height: auto;
+}
+
+#nav #breadcrumb-special {
+	padding: 0 1.25em 0 0;
+}
+
+.logo {
+	margin: 0 0 0.5em 0;
+}
+
+.nav-heading {
+	white-space: nowrap;
+}
+
+@media screen and (max-width: 400px) {
+	.nav-heading {
+		font-size: 6.5vw;
+	}
 }
