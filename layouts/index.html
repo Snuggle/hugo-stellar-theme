@@ -42,8 +42,8 @@
                       {{ $summary := index $splitContents 0 }}
                       {{ $summary := replaceRE "\\[\\^.*?\\]" "" $summary }}
                       {{ $summary := replaceRE "\\n\\[\\^.*?\\]:.*" "" $summary }}
-                      {{ $summary := replaceRE "^<a href=\".*\">(.*)</a>" "" }}
-                      {{ $summary := replaceRE "^<p><a href=\".*\">(.*)</a>" "<p>$1" }}
+                      {{ $summary := replaceRE "^<a href=\".*\">(.*)</a>" "" $summary }}
+                      {{ $summary := replaceRE "^<p><a href=\".*\">(.*)</a>" "<p>$1" $summary }}
                       {{ $summary | markdownify }}
                       </p>
                       <p>
@@ -86,8 +86,8 @@
                       {{ $summary := index $splitContents 0 }}
                       {{ $summary := replaceRE "\\[\\^.*?\\]" "" $summary }}
                       {{ $summary := replaceRE "\\n\\[\\^.*?\\]:.*" "" $summary }}
-                      {{ $summary := replaceRE "^<a href=\".*\">(.*)</a>" "" }}
-                      {{ $summary := replaceRE "^<p><a href=\".*\">(.*)</a>" "<p>$1" }}
+                      {{ $summary := replaceRE "^<a href=\".*\">(.*)</a>" "" $summary }}
+                      {{ $summary := replaceRE "^<p><a href=\".*\">(.*)</a>" "<p>$1" $summary }}
                       {{ $summary | markdownify }}
                       </p>
                       <p>
