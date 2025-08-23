@@ -29,7 +29,9 @@
                       {{ $summary := index $splitContents 0 }}
                       {{ $summary := replaceRE "\\[\\^.*?\\]" "" $summary }}
                       {{ $summary := replaceRE "\\n\\[\\^.*?\\]:.*" "" $summary }}
-                      {{ $summary | markdownify | replaceRE "^<a href=\".*\">(.*)</a>" "" | replaceRE "^<p><a href=\".*\">(.*)</a>" "<p>$1" | safeHTML }}
+                      {{ $summary := replaceRE "^<a href=\".*\">(.*)</a>" "" }}
+                      {{ $summary := replaceRE "^<p><a href=\".*\">(.*)</a>" "<p>$1" }}
+                      {{ $summary | markdownify }}
                       </p>
                       <p>
                 <a class="read-more" href="{{ .Permalink }}">
@@ -70,7 +72,9 @@
                       {{ $summary := index $splitContents 0 }}
                       {{ $summary := replaceRE "\\[\\^.*?\\]" "" $summary }}
                       {{ $summary := replaceRE "\\n\\[\\^.*?\\]:.*" "" $summary }}
-                      {{ $summary | markdownify | replaceRE "^<a href=\".*\">(.*)</a>" "" | replaceRE "^<p><a href=\".*\">(.*)</a>" "<p>$1" | safeHTML }}
+                      {{ $summary := replaceRE "^<a href=\".*\">(.*)</a>" "" }}
+                      {{ $summary := replaceRE "^<p><a href=\".*\">(.*)</a>" "<p>$1" }}
+                      {{ $summary | markdownify }}
                       </p>
                       <p>
                 <a class="read-more" href="{{ .Permalink }}">
