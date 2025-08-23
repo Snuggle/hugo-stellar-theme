@@ -30,20 +30,17 @@
             {{ if $pinned }}
             {{ range last 3 $pinned }}
               <div class="h-entry card grid-item">
-                <a href="{{ .Permalink }}">
                   <div class="card-body">
                     {{ if .Title }}
                     <h2>📌 {{ .Title }}</h2>
                     {{ end }}
                     {{ if in .RawContent "<!--more-->" }}
-                    <div class="p-summary">
+                    <div class="p-summary debug-1">
                       <p>
                       {{ $splitContents := split .RawContent "<!--more-->" }}
                       {{ $summary := index $splitContents 0 }}
                       {{ $summary := replaceRE "\\[\\^.*?\\]" "" $summary }}
                       {{ $summary := replaceRE "\\n\\[\\^.*?\\]:.*" "" $summary }}
-                      {{ $summary := replaceRE "^<a href=\".*\">.*\\n\\s*</a>" "" $summary }}
-                      {{ $summary := replaceRE "^<p><a href=\".*\">(.*)</a>" "<p>$1" $summary }}
                       {{ $summary | markdownify }}
                       </p>
                       <p>
@@ -71,7 +68,6 @@
 						{{ $paginator := .Paginate $posts }}
 						{{ range $paginator.Pages }}
               <div class="h-entry card grid-item">
-                <a href="{{ .Permalink }}">
                   <div class="card-body">
                     {{ if .Title }}
                     <h2>{{ .Title }}</h2>
@@ -80,14 +76,13 @@
                       <script type="text/javascript" src="https://micro.blog/narration.js?url={{ . }}"></script>
                     {{ end }}
                     {{ if in .RawContent "<!--more-->" }}
-                    <div class="p-summary">
+                    <div class="p-summary debug-2">
                       <p>
                       {{ $splitContents := split .RawContent "<!--more-->" }}
                       {{ $summary := index $splitContents 0 }}
                       {{ $summary := replaceRE "\\[\\^.*?\\]" "" $summary }}
                       {{ $summary := replaceRE "\\n\\[\\^.*?\\]:.*" "" $summary }}
-                      {{ $summary := replaceRE "^<a href=\".*\">.*\\n\\s*</a>" "" $summary }}
-                      {{ $summary := replaceRE "^<p><a href=\".*\">(.*)</a>" "<p>$1" $summary }}
+                      {{ $opts := dict "display" "block" }}
                       {{ $summary | markdownify }}
                       </p>
                       <p>
