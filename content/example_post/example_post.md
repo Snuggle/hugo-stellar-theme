@@ -10,6 +10,9 @@ categories:
 - "posts"
 ---
 
+<a href="http://localhost:1313/example_post/example_post/">blaH</a>
 Welcome to my longer blog post that has a title with a link
 
 https://example.com
+
+<img src="https://snugg.ie/colour.png">
