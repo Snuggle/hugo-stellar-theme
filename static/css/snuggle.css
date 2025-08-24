@@ -790,7 +790,7 @@ video {
   z-index: 1;
   cursor: pointer;
   border: 2px solid transparent;
-  border-radius: 0.5rem;
+  border-radius: 0.47em;
   transition: border-color 200ms;
 }
 
@@ -830,4 +830,8 @@ video {
 .card-body a:hover,
 .card-body a:focus-visible {
   border-color: var(--red);
+}
+
+.card_title:empty {
+	margin-top: 0;
 }
