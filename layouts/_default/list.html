@@ -21,7 +21,7 @@
       {{ if .Title }}
           <h2 class="post-title p-name"><a href="{{ .Permalink }}">{{ .Title }}</a></h2>
               {{ if in .RawContent "<!--more-->" }}
-              <div class="p-summary debug-2">
+              <div class="p-summary">
                   {{ $splitContents := split .RawContent "<!--more-->" }}
                   {{ index $splitContents 0 | markdownify }}
                   <p><a class="read-more" href="{{ .Permalink }}">
