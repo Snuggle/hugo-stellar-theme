@@ -89,15 +89,16 @@ body.force-theme-dark {
 }
 
 #main.force-theme-dark {
-	background-color: #230313;
+	background-color: #230313 !important;
 	color: LavenderBlush;
 }
+
 
 #nav.force-theme-dark h2 {
 	color: LavenderBlush;
 }
 
-#main.force-theme-dark a:hover {
+#main.force-theme-dark a {
 	color: white;
 }
 
