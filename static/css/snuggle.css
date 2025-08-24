@@ -274,7 +274,7 @@ p a {
 	border-bottom: none;
 	color: #632844;
 	background-color: #a98f9e26;
-	padding: 0 .1rem;
+  	padding: 0.125rem 0.5rem;
 	border-radius: 5px;
 	font-weight: _font(weight-bold);
 
@@ -777,4 +777,57 @@ video {
 	.nav-heading {
 		font-size: 6.5vw;
 	}
+}
+
+/* https://www.webbae.net/posts/the-brutally-honest-guide-to-building-better-cards */ 
+
+
+/* Expand link hitbox over whole card */
+.card_title::before {
+  content: " ";
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  cursor: pointer;
+  border: 2px solid transparent;
+  border-radius: 0.5rem;
+  transition: border-color 200ms;
+}
+
+/* Indicate that card is interactive */
+.card_title:hover::before,
+.card_title:focus-visible::before {
+  border-color: var(--red);
+}
+
+.card_title:focus {
+  outline: none;
+}
+
+.card_title {
+	display: block;
+	margin-top: 0.5em;
+	margin-left: 0.5em;
+	margin-right: 0.5em;
+	color: #222;
+	line-height: 1.4;
+	font-size: 1.3em;
+	font-weight: 500;
+	transition: all ease-in 100ms;
+}
+
+.card-body a {
+  /*  These properties ensure it's clickable and remove default focus state  */
+  z-index: 2;
+  outline: none;
+}
+
+.e-content a {
+	position: relative;
+}
+
+
+.card-body a:hover,
+.card-body a:focus-visible {
+  border-color: var(--red);
 }

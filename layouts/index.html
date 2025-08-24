@@ -70,7 +70,7 @@
               <div class="h-entry card grid-item">
                   <div class="card-body">
                     {{ if .Title }}
-                    <h2>{{ .Title }}</h2>
+                    <a class="card_title" href="{{ .Permalink }}">{{ .Title }}</a>
                     {{ end }}
                     {{ with .Params.audio }}
                       <script type="text/javascript" src="https://micro.blog/narration.js?url={{ . }}"></script>
