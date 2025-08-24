@@ -826,6 +826,9 @@ video {
 	position: relative;
 }
 
+.p-summary a {
+	position: relative;
+}
 
 .card-body a:hover,
 .card-body a:focus-visible {
