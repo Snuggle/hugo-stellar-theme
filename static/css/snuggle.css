@@ -146,10 +146,6 @@ body.force-theme-dark {
 	color: black !important;
 }
 
-#main.force-theme-dark .statuslol {
-	background-image: url("images/overlay.png"), linear-gradient(45deg, RGBA(0,0, 0,0.3) 15%, RGBA(0,0, 0,0.3) 85%) !important;
-}
-
 /* Toggle theme buttons */
 
 .toggle-theme-light {
@@ -911,45 +907,4 @@ nav .statuslol_content p {
 
 .main .statuslol_emoji_container span {
 	font-size: 100% !important;
-}
-
-
-
-
-
-
-
-
-
-
-@media screen and (max-width: 980px) {
-	nav .statuslol {
-		margin-bottom: 2em;
-		display: none !important;
-
-	}
-
-}
-
-@media screen and (min-width: 980px) {
-	nav .statuslol {
-		margin-left: 4em;
-	}
-
-	.main .statuslol {
-		display: none !important;
-	}
-}
-
-nav .statuslol_emoji_container span {
-	font-size: 100% !important;
-}
-
-nav .statuslol_emoji_container {
-	margin-left: 0px;
-	font-size: 1.5em !important;
-}
-
-nav .statuslol {
-	padding: 5px 10px 5px 10px !important
 }
