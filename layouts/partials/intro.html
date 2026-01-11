@@ -6,12 +6,12 @@
       </header>
       <p class="p-summary p-note">{{ .Site.Params.intro.description | markdownify }}</p>
       <ul class="actions">
-      	<li>
+      	<li style="padding: 0;">
       		  {{ partial "status-update.html" }}
       	</li>
       	<br>
         {{range $button := .Site.Params.intro.action }}
-          <li>
+          <li style="padding: 0;">
             <a href="{{ $button.href }}" class="button {{ $button.customClass }}">{{ $button.buttontext }}</a>
           </li>
         {{ end }}
