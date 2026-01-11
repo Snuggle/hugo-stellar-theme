@@ -845,21 +845,23 @@ video {
 }
 
 
-.statuslol {
-	width: 16em;
+nav .statuslol {
+	flex-wrap: nowrap !important;
 	align-items: flex-end;
 }
 
-.statuslol_emoji_container {
-	display: flex;
-}
 
-.statuslol_content {
+nav .statuslol_content {
 	display: flex;
+	flex-shrink: 0 !important;
 	flex-direction: column;
+	flex-basis: 250px;
+	margin-right: 0px !important;
+	text-wrap: nowrap;
+	font-size: 0.8em;
 }
 
-.statuslol_content p {
+nav .statuslol_content p {
 	margin: 0;
 }
 
@@ -867,19 +869,87 @@ video {
 	margin-bottom: 2em;
 }
 
+
+
+
+
+
+
+
+
+
+.main .statuslol {
+	width: 16em;
+	align-items: flex-end;
+}
+
+.main .statuslol_emoji_container {
+	display: flex;
+}
+
+.main .statuslol_content {
+	display: flex;
+	flex-direction: column;
+}
+
+.main .statuslol_content p {
+	margin: 0;
+}
+
+
 @media screen and (max-width: 980px) {
-	.statuslol {
+	.main .statuslol {
 		margin-bottom: 2em;
 	}
 }
 
 @media screen and (min-width: 980px) {
-	.statuslol {
+	.main .statuslol {
 		margin-left: 4em;
 	}
 }
 
-.statuslol_emoji_container span {
+.main .statuslol_emoji_container span {
 	font-size: 100% !important;
 }
 
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 980px) {
+	nav .statuslol {
+		margin-bottom: 2em;
+		display: none !important;
+
+	}
+
+}
+
+@media screen and (min-width: 980px) {
+	nav .statuslol {
+		margin-left: 4em;
+	}
+
+	.main .statuslol {
+		display: none !important;
+	}
+}
+
+nav .statuslol_emoji_container span {
+	font-size: 100% !important;
+}
+
+nav .statuslol_emoji_container {
+	margin-left: 0px;
+	font-size: 1.5em !important;
+}
+
+nav .statuslol {
+	padding: 5px 10px 5px 10px !important
+}
