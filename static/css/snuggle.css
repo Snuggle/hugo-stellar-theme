@@ -146,6 +146,10 @@ body.force-theme-dark {
 	color: black !important;
 }
 
+#main.force-theme-dark .statuslol {
+	background-image: url("images/overlay.png"), linear-gradient(45deg, RGBA(0,0, 0,0.3) 15%, RGBA(0,0, 0,0.3) 85%) !important;
+}
+
 /* Toggle theme buttons */
 
 .toggle-theme-light {
@@ -878,3 +882,4 @@ video {
 .statuslol_emoji_container span {
 	font-size: 100% !important;
 }
+
