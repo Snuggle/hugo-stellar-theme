@@ -146,6 +146,7 @@ body.force-theme-dark {
 	color: black !important;
 }
 
+
 /* Toggle theme buttons */
 
 .toggle-theme-light {
@@ -839,3 +840,47 @@ video {
 .card_title:empty {
 	margin-top: 0;
 }
+
+
+.statuslol {
+	width: 16em;
+	align-items: flex-end;
+	background: transparent !important;
+	align-items: center;
+}
+
+.statuslol_emoji_container {
+	display: flex;
+}
+
+.statuslol_content {
+	display: flex;
+	flex-direction: column;
+}
+
+.statuslol_content p {
+	margin: 0;
+}
+
+.spotlight .image {
+	margin-bottom: 2em;
+}
+
+#main.force-theme-dark .statuslol {
+	.statuslol_content {
+		color: white !important;
+	}
+	
+	.statuslol_time small {
+		color: white !important;
+	}
+
+	.statuslol_time small a {
+			color: white !important;
+		}
+}
+
+.statuslol_emoji_container span {
+	font-size: 100% !important;
+}
+

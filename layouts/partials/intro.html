@@ -6,15 +6,21 @@
       </header>
       <p class="p-summary p-note">{{ .Site.Params.intro.description | markdownify }}</p>
       <ul class="actions">
+      	<li style="padding: 0;">
+      		  {{ partial "status-update.html" }}
+      	</li>
+      	<br>
         {{range $button := .Site.Params.intro.action }}
-          <li>
+          <li style="padding: 0;">
             <a href="{{ $button.href }}" class="button {{ $button.customClass }}">{{ $button.buttontext }}</a>
           </li>
         {{ end }}
       </ul>
     </div>
     {{ if .Site.Params.intro.image }}
-      <span class="image"><picture>  <source srcset="/avatar.webp" type="image/webp"><source srcset="/avatar.jpg" type="image/jpeg"><img class="u-photo" rel="preload" src="{{ .Site.Params.intro.image }}" alt="Evie Snuggle's portrait with a garden behind" /></picture></span>
+    <div style="display: flex; flex-direction: column; align-items: center;">
+      <span class="image"><picture>  <img class="u-photo" rel="preload" src="{{ .Site.Params.intro.image }}" alt="Evie Snuggle's portrait with a garden behind" /></picture></span>
+	</div>
     {{ end }}
     <div style="display: none;">
       <a class="u-url" style="display: none;" href="https://snugg.ie"></a>
