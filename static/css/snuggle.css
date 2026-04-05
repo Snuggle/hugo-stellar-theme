@@ -458,7 +458,6 @@ html {
 	height: 15rem;
 	width: 100%;
 	object-fit: cover;
-	border-radius: 5px;
 }
 
 .post-content video {
@@ -592,14 +591,30 @@ img {
 	margin: 0;
 }
 
-.card-body .e-content {
-	padding-top: 0.5em;
+.card-body .e-content:has(img) {
+	padding-top: 0;
+}
+
+.e-content {
+	line-height: 0;
+	padding-bottom: 0.5em;
+}
+
+.e-content > * {
+	line-height: 1.4;
 }
 
 
 .card-body .e-content p {
 	padding-left: 0.8em;
 	padding-right: 0.8em;
+	padding-bottom: 0.3em;
+	margin-top: 0.5em;
+}
+
+.card-body .e-content p:has(video) {
+	padding-left: 0;
+	padding-right: 0;
 }
 
 .card-body .e-content p img {
@@ -731,6 +746,7 @@ iframe {
 	border-radius: 5px;
 	height: 300px;
 	width: 300px;
+	object-fit: cover;
 }
 
 .nav-heading {
@@ -808,12 +824,12 @@ video {
 
 .card_title {
 	display: block;
+	padding-left: 0.8em;
+	padding-right: 0.8em;
 	margin-top: 0.5em;
-	margin-left: 0.5em;
-	margin-right: 0.5em;
 	color: #636363;
 	line-height: 1.4;
-	font-size: 1.3em;
+	font-size: 1em;
 	font-weight: 500;
 	transition: all ease-in 100ms;
 }
