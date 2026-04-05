@@ -1,0 +1,60 @@
+<!DOCTYPE HTML>
+<!--
+	Stellar by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+    {{ partial "head.html" . }}
+	</head>
+	<body>
+    
+
+		<!-- Wrapper -->
+			<div id="wrapper" class="post">
+
+				<!-- Header -->
+        {{ partial "header.html" . }}
+
+        {{ partial "navigation.html" . }}
+				<!-- Main -->
+					<div id="main">
+            
+            <section id="content" class="main">
+            <article class="h-entry">
+						<!-- Content -->
+                         <div class="photos">
+				<h2 class="p-name">Photos</h2>
+            <div class="photos-grid-container" style="display: grid; grid-column-gap: 15px; grid-row-gap: 15px; grid-template-columns: 33% 33% 33%;">
+
+	{{- $list := where .Site.Pages ".Params.photos" "!=" nil -}}
+	{{- $len := (len $list) -}}
+	{{ range $index, $value := $list }}
+		<a href="{{ .Permalink }}">
+			{{ range first 1 .Params.photos }}
+				<img src="{{ . }}" class="photos-grid-item" loading="lazy" />
+			{{ end }}
+		</a>
+	{{ end }}
+
+	</div>
+  </div>
+  </article>
+            </section>
+
+					</div>
+
+				<!-- Footer -->
+        {{ partial "footer.html" . }}
+
+
+			</div>
+
+      {{ partial "scripts.html" . }}
+      {{- partial "footer_custom.html" . }}
+
+	</body>
+</html>
+
+
