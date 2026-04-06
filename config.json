@@ -51,6 +51,7 @@
       "paginate_home": false,
       "paginate_categories": false,
       "paginate_replies": false,
+      "theme": "Stellar",
       "theme_seconds": "1735040229",
       "plugins_css": [
           "/assets/css/poststats.css?1735040865",
