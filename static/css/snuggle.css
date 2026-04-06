@@ -581,6 +581,10 @@ img {
 	overflow: scroll;
 }
 
+.card .microblog_collection {
+	display: none;
+}
+
 .card h2 {
 	margin-top: 0.5em;
 	margin-left: 0.5em;
