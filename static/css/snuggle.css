@@ -1002,8 +1002,17 @@ video {
 }
 
 
+#content .microblog_collection img {
+    aspect-ratio: unset;
+}
+
 
 #main > .main .post .post-content .microblog_collection img {
+	padding: 0.5em 0;
+	border-radius: 0;
+}
+
+#main > #content .microblog_collection img {
 	padding: 0.5em 0;
 	border-radius: 0;
 }
@@ -1019,6 +1028,15 @@ video {
 		} */
 
 		#main > .main .post .post-content img {
+			margin-left: -5em;
+			margin-right: -5em;
+			max-width: calc(100% + 10em);
+			width: auto;
+					height: auto;
+			border-radius: 0;
+		}
+
+		#main > #content img {
 			margin-left: -5em;
 			margin-right: -5em;
 			max-width: calc(100% + 10em);
@@ -1048,6 +1066,15 @@ video {
 					height: auto;
 				border-radius: 0;
 			}
+
+			#main > #content img {
+				margin-left: -4em;
+				margin-right: -4em;
+				max-width: calc(100% + 8em);
+				width: auto;
+					height: auto;
+				border-radius: 0;
+			}
 		}
 
 		@media screen and (max-width: 980px) {
@@ -1070,6 +1097,15 @@ video {
 				border-radius: 0;
 			}
 
+			#main > #content img {
+				margin-left: -3em;
+				margin-right: -3em;
+				max-width: calc(100% + 6em);
+				width: auto;
+					height: auto;
+				border-radius: 0;
+			}
+
 		}
 
 		@media screen and (max-width: 736px) {
@@ -1084,6 +1120,15 @@ video {
 			} */
 
 			#main > .main .post .post-content img {
+				margin-left: -2em;
+				margin-right: -2em;
+				max-width: calc(100% + 4em);
+				width: auto;
+					height: auto;
+				border-radius: 0;
+			}
+
+			#main > #content img {
 				margin-left: -2em;
 				margin-right: -2em;
 				max-width: calc(100% + 4em);
@@ -1116,6 +1161,15 @@ video {
 				border-radius: 0;
 			}
 
+			#main > #content img {
+				margin-left: -1.5em;
+				margin-right: -1.5em;
+				max-width: calc(100% + 3em);
+				width: auto;
+					height: auto;
+				border-radius: 0;
+			}
+
 			
 		}
 
@@ -1131,6 +1185,15 @@ video {
 				} */
 
 				#main > .main .post .post-content img {
+					margin-left: -1em;
+					margin-right: -1em;
+					max-width: calc(100% + 2em);
+					width: auto;
+					height: auto;
+					border-radius: 0;
+				}
+
+				#main > #content img {
 					margin-left: -1em;
 					margin-right: -1em;
 					max-width: calc(100% + 2em);
