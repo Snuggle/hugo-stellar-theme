@@ -24,17 +24,19 @@
             <section id="content" class="main">
             <article class="h-entry">
 						<!-- Content -->
-            <div class="post {{ range .Params.categories }} {{ . | urlize | lower }}{{ end }}">
-              {{ if .Params.reply_to_url }} <a href="{{ .Permalink }}" class="post-date u-url"><time class="dt-published" datetime="{{ .Date.Format "2006-01-02 15:04:05 -0700" }}">{{ .Date.Format "Jan 2, 2006" }}</time> ∞</a>
-              <div class="reply-to"> Replying to: {{ if eq .Params.reply_to_hostname "micro.blog" }} <a href="{{ .Params.reply_to_url }}" class="u-in-reply-to">@{{ .Params.reply_to_username }}</a> {{ else }} <a href="{{ .Params.reply_to_url }}" class="u-in-reply-to">{{ .Params.reply_to_hostname }}</a> {{ end }} </div> {{ end }}
+            <div class="full-size-gallery">
+              <div class="post {{ range .Params.categories }} {{ . | urlize | lower }}{{ end }}">
+                {{ if .Params.reply_to_url }} <a href="{{ .Permalink }}" class="post-date u-url"><time class="dt-published" datetime="{{ .Date.Format "2006-01-02 15:04:05 -0700" }}">{{ .Date.Format "Jan 2, 2006" }}</time> ∞</a>
+                <div class="reply-to"> Replying to: {{ if eq .Params.reply_to_hostname "micro.blog" }} <a href="{{ .Params.reply_to_url }}" class="u-in-reply-to">@{{ .Params.reply_to_username }}</a> {{ else }} <a href="{{ .Params.reply_to_url }}" class="u-in-reply-to">{{ .Params.reply_to_hostname }}</a> {{ end }} </div> {{ end }}
 
-                <article class="post-content e-content">
-                  {{ if .Title }}
-                  <h1 class="p-name">{{ .Title }}</h2>
-                  {{ end }}
-                  {{ .Content | replaceRE "<img" "<img class=\"u-photo\"" | safeHTML }}
-                </article>
-                <a rel="author" class="p-author h-card" style="display:none;" href="https://snugg.ie"><img class="u-photo" src="https://snugg.ie/avatar.jpg" />Evie Snuggle</a>
+                  <article class="post-content e-content">
+                    {{ if .Title }}
+                    <h1 class="p-name">{{ .Title }}</h2>
+                    {{ end }}
+                    {{ .Content | replaceRE "<img" "<img class=\"u-photo\"" | safeHTML }}
+                  </article>
+                  <a rel="author" class="p-author h-card" style="display:none;" href="https://snugg.ie"><img class="u-photo" src="https://snugg.ie/avatar.jpg" />Evie Snuggle</a>
+                </div>
               </div>
               {{ if .Params.categories }}
   <ul class="post-tags">
