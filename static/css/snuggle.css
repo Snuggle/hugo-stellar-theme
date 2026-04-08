@@ -925,7 +925,6 @@ video {
 	flex-wrap: wrap;
 	flex: 0 1 33.33%;
 	height: auto;
-	width: 33.33%;
 	aspect-ratio: 1 / 1;
 	justify-content: space-between;
 	overflow: hidden;
@@ -997,3 +996,91 @@ video {
 	cursor: pointer;
 }
 
+.post .post-content .microblog_collection img {
+    aspect-ratio: unset;
+}
+
+
+
+#main > .main .post .post-content .microblog_collection img {
+	padding: 0.5em 0;
+	border-radius: 0;
+}
+
+
+		#main > .main {
+			padding: 5em 5em 3em 5em ;
+		}
+
+		#main > .main .post .post-content .microblog_collection {
+			margin-left: -5em;
+			margin-right: -5em;
+		}
+
+			
+		@media screen and (max-width: 1280px) {
+
+			#main > .main {
+				padding: 4em 4em 2em 4em ;
+			}
+
+			#main > .main .post .post-content .microblog_collection {
+				margin-left: -4em;
+				margin-right: -4em;
+			}
+		}
+
+		@media screen and (max-width: 980px) {
+
+			#main > .main {
+				padding: 4em 3em 2em 3em ;
+			}
+
+			#main > .main .post .post-content .microblog_collection {
+				margin-left: -3em;
+				margin-right: -3em;
+			}
+
+		}
+
+		@media screen and (max-width: 736px) {
+
+			#main > .main {
+				padding: 3em 2em 1em 2em ;
+			}
+
+			#main > .main .post .post-content .microblog_collection {
+				margin-left: -2em;
+				margin-right: -2em;
+			}
+
+		
+
+		}
+
+		@media screen and (max-width: 480px) {
+
+			#main > .main {
+				padding: 3em 1.5em 1em 1.5em ;
+			}
+
+			#main > .main .post .post-content .microblog_collection {
+				margin-left: -1.5em;
+				margin-right: -1.5em;
+			}
+
+			
+		}
+
+		@media screen and (max-width: 360px) {
+
+				#main > .main {
+					padding: 2.5em 1em 0.5em 1em ;
+				}
+
+				#main > .main .post .post-content .microblog_collection {
+					margin-left: -1em;
+					margin-right: -1em;
+				}
+
+		}
