@@ -922,9 +922,8 @@ video {
 	/* flex: auto; */
 	/* align-self: normal; */
 	max-height: calc(width);
-	f: auto;
 	flex-wrap: wrap;
-	flex: 0 0 auto;
+	flex: 0 1 33.33%;
 	height: auto;
 	width: 33.33%;
 	aspect-ratio: 1 / 1;
@@ -998,9 +997,3 @@ video {
 	cursor: pointer;
 }
 
-@media screen and (max-width: 800px) {
-	.microblog_collection img {
-		width: 150px;
-		height: 150px;
-	}            
-}
